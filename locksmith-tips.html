@@ -1,0 +1,274 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Locksmith Tips & Security Reality | EZ Locksmith</title>
+    <meta name="description" content="No-nonsense security tips, lock reviews, and Detroit locksmith advice. We don't sugarcoat your safety." />
+    <meta name="robots" content="index, follow" />
+    <link rel="canonical" href="https://ezlocksmithdetroit.com/locksmith-tips.html" />
+    <meta property="og:title" content="Locksmith Tips & Security Reality | EZ Locksmith" />
+    <meta property="og:description" content="No-nonsense security tips, lock reviews, and Detroit locksmith advice. We don't sugarcoat your safety." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://ezlocksmithdetroit.com/locksmith-tips.html" />
+    <meta name="twitter:card" content="summary_large_image" />
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/webp" href="ezfav.webp" />
+    
+    <!-- Google Analytics Placeholder -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-XXXXXXXXXX');
+    </script>
+
+    <link rel="stylesheet" href="styles.css" />
+    
+    <!-- Custom Editorial Typography & Styles for the Blog -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+    
+    <style>
+      :root {
+        --display-font: 'Bodoni Moda', serif;
+        --mono-font: 'JetBrains Mono', monospace;
+      }
+      /* Inherits noise and background from global styles.css */
+      /* High-Contrast Typography */
+      .editorial-header {
+        font-family: var(--display-font);
+        font-size: clamp(3rem, 8vw, 6rem);
+        line-height: 0.9;
+        color: #ffffff;
+        letter-spacing: -2px;
+        margin-bottom: 20px;
+        text-transform: uppercase;
+      }
+      .editorial-meta {
+        font-family: var(--mono-font);
+        font-size: 12px;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        color: var(--primary);
+        display: block;
+        margin-bottom: 10px;
+      }
+
+      /* Asymmetrical Layout */
+      .blog-container {
+        max-width: 1400px;
+        margin: 80px auto;
+        padding: 0 5%;
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        gap: 40px;
+      }
+      
+      .featured-post {
+        grid-column: 1 / 13;
+        display: grid;
+        grid-template-columns: 60% 40%;
+        gap: 0;
+        align-items: center;
+        margin-bottom: 60px;
+      }
+      @media (max-width: 900px) {
+        .featured-post { grid-template-columns: 1fr; }
+      }
+      
+      .featured-img-wrap {
+        position: relative;
+        padding-right: 40px;
+      }
+      .featured-img {
+        width: 100%;
+        height: 600px;
+        object-fit: cover;
+        /* Irregular radius & organic shape */
+        border-radius: 2px 80px 4px 24px;
+        filter: grayscale(80%) contrast(1.2);
+        box-shadow: -20px 20px 60px rgba(0,0,0,0.15), 0 4px 10px rgba(0,0,0,0.05);
+        transition: all 0.5s cubic-bezier(0.2, 0.8, 0.2, 1);
+      }
+      
+      .featured-content {
+        background: var(--bg-light);
+        padding: 60px 40px;
+        margin-left: -100px; /* Overlap */
+        z-index: 2;
+        border-radius: 0 0 40px 0;
+        box-shadow: 0 30px 60px rgba(0,0,0,0.08);
+      }
+      @media (max-width: 900px) {
+        .featured-content { margin-left: 0; margin-top: -50px; }
+        .featured-img-wrap { padding-right: 0; }
+        .featured-img { height: 400px; }
+      }
+
+      /* Micro-interactions */
+      .post-card {
+        background: var(--bg-light);
+        padding: 30px;
+        border-radius: 8px 32px 8px 8px;
+        box-shadow: 0 10px 30px rgba(0,0,0,0.03);
+        transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275), border-radius 0.4s ease;
+        position: relative;
+        overflow: hidden;
+      }
+      .post-card:hover {
+        transform: translateY(-10px) rotate(-1deg);
+        border-radius: 32px 8px 32px 8px;
+        box-shadow: 0 20px 40px rgba(0,0,0,0.08);
+      }
+      .post-card .editorial-img {
+        width: 100%;
+        height: 250px;
+        object-fit: cover;
+        filter: grayscale(100%);
+        transition: filter 0.5s ease;
+        border-radius: 4px;
+        margin-bottom: 20px;
+      }
+      .post-card:hover .editorial-img {
+        filter: grayscale(0%);
+      }
+
+      .secondary-post-1 { grid-column: 1 / 6; }
+      .secondary-post-2 { grid-column: 6 / 13; margin-top: 80px; } /* Intentional offset */
+      .secondary-post-3 { grid-column: 1 / 8; }
+      .secondary-post-4 { grid-column: 8 / 13; margin-top: -60px; }
+
+      @media (max-width: 768px) {
+        .secondary-post-1, .secondary-post-2, .secondary-post-3, .secondary-post-4 {
+          grid-column: 1 / 13;
+          margin-top: 0;
+        }
+      }
+
+      .punchy-btn {
+        display: inline-block;
+        margin-top: 20px;
+        font-family: var(--mono-font);
+        font-weight: bold;
+        text-transform: uppercase;
+        color: var(--primary);
+        text-decoration: none;
+        border-bottom: 2px solid transparent;
+        transition: border-color 0.3s ease;
+      }
+      .punchy-btn:hover {
+        border-color: var(--primary);
+      }
+    </style>
+  </head>
+  <body class="noise-bg">
+    <div class="trust-bar">
+      ⭐⭐⭐⭐⭐ 500+ GOOGLE REVIEWS | LICENSED, BONDED & INSURED | 24/7 EMERGENCY SERVICE
+    </div>
+    <header>
+      <a href="index.html" style="text-decoration: none; color: inherit;"><div class="logo">EZ <span>LOCKSMITH</span></div></a>
+      <div class="header-actions">
+        <a href="tel:2487984366" class="btn-call header-call-btn">📞 (248) 798-4366</a>
+        <button class="menu-toggle" id="mobile-menu-btn" aria-label="Toggle Menu">☰</button>
+      </div>
+      <nav class="main-nav" id="main-navigation">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li class="has-dropdown" id="services-dropdown">
+            <a href="index.html#services">Services <span>▼</span></a>
+            <ul class="submenu">
+              <li><a href="auto.html">Auto & Car Keys</a></li>
+              <li><a href="residential.html">Residential Locks</a></li>
+              <li><a href="commercial.html">Commercial & Maglocks</a></li>
+              <li><a href="access-control.html">Access Control & Cameras</a></li>
+              <li><a href="historic.html">Historic & Skeleton Keys</a></li>
+            </ul>
+          </li>
+          <li class="has-dropdown" id="areas-dropdown">
+            <a href="index.html#areas">Service Areas <span>▼</span></a>
+            <ul class="submenu" style="min-width: 200px">
+              <li><a href="locksmith-detroit.html">Detroit</a></li>
+              <li><a href="locksmith-royal-oak.html">Royal Oak</a></li>
+              <li><a href="locksmith-southfield.html">Southfield</a></li>
+              <li><a href="index.html#areas">View All Suburbs</a></li>
+            </ul>
+          </li>
+          <li><a href="locksmith-tips.html">Security Truths</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <div class="blog-container">
+      
+      <!-- Featured Overlapping Article -->
+      <article class="featured-post">
+        <div class="featured-img-wrap">
+          <img src="Door%20Handle%20Or%20Doorknob/IMG_20260524_230311%20(13).webp" alt="Heavy duty padlock close up" class="featured-img">
+        </div>
+        <div class="featured-content">
+          <span class="editorial-meta">01 / Security Truths</span>
+          <h1 class="editorial-header">Your Home Deadbolt is a Joke.</h1>
+          <p style="font-size: 1.1rem; line-height: 1.6; color: #444;">
+            Most hardware store locks can be bumped in under 15 seconds. If you bought a standard deadbolt off a shelf, you're buying the illusion of safety, not actual security. Here is the gritty truth about what actually stops an intruder in Metro Detroit.
+          </p>
+          <a href="deadbolt-security-truths.html" class="punchy-btn">Read the Brutal Truth →</a>
+        </div>
+      </article>
+
+      <!-- Asymmetrical Grid Items -->
+      <article class="post-card secondary-post-1">
+        <img src="Locksmith%20Van%20Or%20Work%20Truck/IMG_20260524_230304%20(2).webp" alt="Car keys on dashboard" class="editorial-img">
+        <span class="editorial-meta">02 / Auto</span>
+        <h2 style="font-family: var(--display-font); font-size: 2.5rem; line-height: 1; margin: 10px 0;">Stop Paying Dealership Prices.</h2>
+        <p>They charge an arm and a leg for a piece of plastic and a microchip. We do it in a parking lot for a fraction of the cost. The secret they don't want you to know.</p>
+        <a href="dealership-key-replacement.html" class="punchy-btn">Learn More →</a>
+      </article>
+
+      <article class="post-card secondary-post-2">
+        <img src="Door%20Handle%20Or%20Doorknob/IMG_20260524_230308%20(11).webp" alt="Old rusted lock mechanism" class="editorial-img">
+        <span class="editorial-meta">03 / Historic Homes</span>
+        <h2 style="font-family: var(--display-font); font-size: 2.5rem; line-height: 1; margin: 10px 0;">Respect the Brass.</h2>
+        <p>Stop tearing out 1920s mortise locks from your Palmer Woods home. We can restore the original mechanism and cut a bespoke skeleton key. Stop erasing history.</p>
+        <a href="antique-lock-restoration.html" class="punchy-btn">Learn More →</a>
+      </article>
+
+      <article class="post-card secondary-post-3">
+        <img src="Padlock%20Or%20Deadbolt/IMG_20260524_230305%20(18).webp" alt="Commercial push bar" class="editorial-img">
+        <span class="editorial-meta">04 / Commercial</span>
+        <h2 style="font-family: var(--display-font); font-size: 2.5rem; line-height: 1; margin: 10px 0;">Maglocks 101.</h2>
+        <p>Why your storefront is vulnerable right now, and how heavy-duty electronic access control changes the game for Detroit businesses.</p>
+        <a href="maglocks-101.html" class="punchy-btn">Learn More →</a>
+      </article>
+
+      <article class="post-card secondary-post-4">
+        <img src="Locksmith%20Van%20Or%20Work%20Truck/IMG_20260524_230306%20(8).webp" alt="Person locked out at night" class="editorial-img">
+        <span class="editorial-meta">05 / Security Truths</span>
+        <h2 style="font-family: var(--display-font); font-size: 2.5rem; line-height: 1; margin: 10px 0;">Fake Locksmith. Real Robbery.</h2>
+        <p>They quote $25 on the phone and charge $400 at your door. Scam locksmiths flood Google every day in Metro Detroit. Here's how to spot one before it's too late.</p>
+        <a href="fake-vs-legit-locksmith.html" class="punchy-btn">Read the Warning →</a>
+      </article>
+
+    </div>
+
+    <footer id="about" style="background: #111; color: white; padding: 60px 5%; text-align: center;">
+      <p style="font-family: var(--mono-font); letter-spacing: 2px;"><strong>EZ LOCKSMITH, LLC</strong></p>
+      <p style="color: #888;">2877 Hilton Rd, Ferndale, MI 48220</p>
+      <p style="color: #555; font-size: 14px;">&copy; 2026 All Rights Reserved.</p>
+      <div class="footer-credits">
+        <span>Website by</span>
+        <a href="https://irondigitalmi.com" target="_blank" rel="noopener">
+          <img src="iron-digital-logo%20(3).webp" alt="Iron Digital MI Logo">
+          <span>Iron Digital MI</span>
+        </a>
+      </div>
+    </footer>
+    <div class="mobile-cta">
+      <a href="tel:2487984366" class="btn-call mobile-btn">TAP TO CALL: (248) 798-4366</a>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
