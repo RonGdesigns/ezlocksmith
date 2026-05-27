@@ -72,25 +72,28 @@
   </head>
   <body>
     <div class="trust-bar">
-      ⭐⭐⭐⭐⭐ 500+ GOOGLE REVIEWS | LICENSED, BONDED & INSURED | 24/7 EMERGENCY SERVICE
+      <div class="trust-bar-content" style="flex-direction: column; text-align: center; justify-content: center;">
+        <div>⭐⭐⭐⭐⭐ 500+ GOOGLE REVIEWS | LICENSED, BONDED & INSURED | 24/7 EMERGENCY SERVICE</div>
+        <div style="margin-top: 4px;">📍 <a href="https://maps.google.com/?q=2877+Hilton+Rd,+Ferndale,+MI+48220" target="_blank" rel="noopener" style="color: inherit; text-decoration: none;">2877 Hilton Rd, Ferndale, MI 48220</a></div>
+      </div>
     </div>
-    
     <header>
-      <a href="index.html" style="text-decoration: none; color: inherit;"><div class="logo">EZ <span>LOCKSMITH</span></div></a>
+      <div class="header-brand">
+        <a href="index.html" style="text-decoration: none; color: inherit;"><div class="logo">EZ <span>LOCKSMITH</span></div></a>
+        <a href="tel:2487984366" class="header-phone-under">(248) 798-4366</a>
+      </div>
       <div class="header-actions">
-        <div style="display: flex; flex-direction: column; align-items: flex-end; margin-right: 15px;">
-          <a href="tel:2487984366" class="btn-call header-call-btn" style="margin-right: 0;">📞 (248) 798-4366</a>
-          <span style="font-size: 0.75rem; color: #ccc; margin-top: 5px; font-family: var(--mono-font);">If no answer: <a href="tel:2488624459" style="color: var(--primary); text-decoration: none;">(248) 862-4459</a></span>
-        </div>
         <button class="menu-toggle" id="mobile-menu-btn" aria-label="Toggle Menu">☰</button>
       </div>
       <nav class="main-nav" id="main-navigation">
         <ul>
           <li><a href="index.html">Home</a></li>
           <li class="has-dropdown" id="services-dropdown">
-            <a href="#services">Services <span>▼</span></a>
+            <a href="index.html#services">Services <span>▼</span></a>
             <ul class="submenu">
               <li><a href="auto.html">Auto & Car Keys</a></li>
+              <li><a href="motorcycles.html">Motorcycles</a></li>
+              <li><a href="specialty-vehicles.html">Boats & Specialty Vehicles</a></li>
               <li><a href="residential.html">Residential Locks</a></li>
               <li><a href="commercial.html">Commercial & Maglocks</a></li>
               <li><a href="access-control.html">Access Control & Cameras</a></li>
@@ -108,6 +111,7 @@
           </li>
           <li><a href="our-work.html">Our Work</a></li>
           <li><a href="locksmith-tips.html">Security Truths</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
         </ul>
       </nav>
     </header>
@@ -120,6 +124,17 @@
       <p style="font-size: 0.9rem; color: #aaa; margin-top: 15px; font-family: var(--mono-font);">After Hours / Secondary: <a href="tel:2488624459" style="color: var(--primary); text-decoration: none;">(248) 862-4459</a></p>
     </section>
 
+    <!-- NEW: STOREFRONT & CAPABILITIES -->
+    <section style="padding: 60px 5%; background: var(--bg-gray); text-align: center;">
+      <h2 class="section-title">Visit Our Storefront</h2>
+      <img src="storefront.png" alt="EZ Locksmith Storefront" style="max-width: 100%; max-height: 500px; object-fit: cover; border-radius: 8px; box-shadow: 0 10px 30px rgba(0,0,0,0.5); margin-bottom: 30px;">
+      
+      <div style="background: var(--bg-light); border: 1px solid var(--primary); border-left: 5px solid var(--primary); border-radius: 4px; padding: 30px; margin-top: 20px;">
+        <h3 style="color: var(--primary); font-family: var(--mono-font); font-size: 1.5rem; margin-top: 0;">We Do It All: Motorcycles to 2026 Vehicles</h3>
+        <p style="font-size: 1.1rem; color: var(--text-main); margin-bottom: 0;">We fully service <strong>Motorcycles</strong> and have all the <strong>newest programmers on the market for cars up to 2026</strong>. Don't go to the dealership—we come to you!</p>
+      </div>
+    </section>
+
     <!-- NEW TRUST BADGES GRID -->
     <div class="trust-badges-container">
       <img src="bbb.webp" alt="BBB Accredited" class="trust-badge" style="height: 50px; width: auto; object-fit: contain;">
@@ -127,6 +142,7 @@
       <img src="google.webp" alt="Google Reviews" class="trust-badge" style="height: 50px; width: auto; object-fit: contain;">
       <img src="aloa.webp" alt="ALOA Security Professionals Association" class="trust-badge" style="height: 50px; width: auto; object-fit: contain;">
       <img src="NASTF_logo.webp" alt="National Automotive Service Task Force" class="trust-badge" style="height: 50px; width: auto; object-fit: contain;">
+      <img src="safe_logo.png" alt="SAFE Technicians" class="trust-badge" style="height: 50px; width: auto; object-fit: contain; filter: invert(1);">
     </div>
     <!-- SCAM ALERT CALLOUT -->
     <section style="padding: 40px 5%; background: var(--secondary);">
@@ -170,6 +186,14 @@
             <p>Your property is fully protected.</p>
           </div>
         </div>
+      </div>
+    </section>
+
+    <!-- POLICE ENDORSEMENT -->
+    <section style="padding: 60px 5%; background: var(--bg-gray); text-align: center; border-bottom: 1px solid var(--border);">
+      <div style="border: 1px solid var(--border); border-left: 4px solid var(--primary); border-radius: 2px 16px 2px 8px; padding: 40px; box-shadow: 0 10px 30px rgba(0,0,0,0.5); max-width: 900px; margin: 0 auto;">
+        <h2 style="color: #fff; font-family: var(--display-font); font-size: clamp(2rem, 4vw, 3rem); margin-top: 0; margin-bottom: 15px;">Trusted by Local Law Enforcement</h2>
+        <p style="color: var(--text-muted); font-size: 1.2rem; margin: 0; font-family: var(--mono-font); text-transform: uppercase; letter-spacing: 1px;">We are the go-to locksmith for lockouts and emergency services for the <span style="color: var(--primary);">Royal Oak</span>, <span style="color: var(--primary);">Ferndale</span>, and <span style="color: var(--primary);">Hazel Park</span> Police Stations.</p>
       </div>
     </section>
 
@@ -227,7 +251,6 @@
     <section class="our-work-section" id="our-work">
       <div class="our-work-header">
         <h2>Real Work.<br>Real Results.</h2>
-        <p>No stock photos. See the actual hardware and vehicles we use to secure Metro Detroit every day.</p>
       </div>
       <div class="home-gallery-grid">
         <div class="gallery-item">
@@ -271,26 +294,26 @@
       <div class="reviews-grid">
         <div class="review-card">
           <div class="stars">★★★★★</div>
-          <p class="review-text">"Locked out of my car at 2am in downtown Detroit. They arrived in 15 minutes and got me back in without a scratch on the door. Highly recommend!"</p>
+          <p class="review-text">"Got locked out of my Honda at 11 PM in the pouring rain. The tech showed up in under 20 minutes, didn't damage my door, and charged exactly what they quoted me on the phone. Lifesavers."</p>
           <div>
-            <span class="review-author">Marcus D.</span>
-            <span class="review-location">📍 Detroit</span>
-          </div>
-        </div>
-        <div class="review-card">
-          <div class="stars">★★★★★</div>
-          <p class="review-text">"Had my locks rekeyed after moving into a new home. Professional, fast, and fair pricing. The technician explained exactly what he was doing."</p>
-          <div>
-            <span class="review-author">Sarah M.</span>
+            <span class="review-author">Michael T.</span>
             <span class="review-location">📍 Ferndale</span>
           </div>
         </div>
         <div class="review-card">
           <div class="stars">★★★★★</div>
-          <p class="review-text">"Our business needed 4 maglocks installed on short notice to pass inspection. EZ Locksmith knocked it out in one afternoon. True pros."</p>
+          <p class="review-text">"I called three other locksmiths who either didn't answer or said they couldn't program a key fob for a 2023 Mercedes. EZ Locksmith came out same-day and had it done in 30 minutes. Extremely professional."</p>
           <div>
-            <span class="review-author">James T.</span>
+            <span class="review-author">Sarah J.</span>
             <span class="review-location">📍 Royal Oak</span>
+          </div>
+        </div>
+        <div class="review-card">
+          <div class="stars">★★★★★</div>
+          <p class="review-text">"Replaced all the locks on our new storefront. The guy was super polite, worked fast, and made sure all the keys worked perfectly before leaving. Would definitely use them again."</p>
+          <div>
+            <span class="review-author">David R.</span>
+            <span class="review-location">📍 Detroit</span>
           </div>
         </div>
       </div>
@@ -351,15 +374,25 @@
       </div>
     </section>
 
-    <footer>
+    <!-- CONTACT CTA INSTEAD OF FORM -->
+    <section style="padding: 60px 5%; background: var(--bg-gray); text-align: center;">
+      <h2 style="font-family: var(--display-font); color: #fff; font-size: 2.5rem; margin-bottom: 15px;">Have a Big Project?</h2>
+      <p style="color: var(--text-muted); font-size: 1.2rem; max-width: 600px; margin: 0 auto 30px;">Thinking of rekeying an entire office building or upgrading your commercial security? We handle large-scale jobs.</p>
+      <a href="contact.html" class="btn-call hero-btn">CONTACT US FOR A QUOTE</a>
+    </section>
+    <footer id="about">
       <p><strong>EZ Locksmith, LLC</strong></p>
       <p>2877 Hilton Rd, Ferndale, MI 48220</p>
-      <p style="margin-top: 10px; font-family: var(--mono-font); color: #ccc;">Main: <a href="tel:2487984366" style="color: var(--primary); text-decoration: none;">(248) 798-4366</a> | Alt: <a href="tel:2488624459" style="color: var(--primary); text-decoration: none;">(248) 862-4459</a></p>
+      <p style="margin-top: 10px; font-family: var(--mono-font); color: #ccc;">After Hours Emergency Number: <a href="tel:2488624459" style="color: var(--primary); text-decoration: none;">(248) 862-4459</a></p>
+      <div class="social-links" style="margin-top: 15px; display: flex; justify-content: center; gap: 15px;">
+        <a href="#" aria-label="Facebook" style="color: white;"><svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M22.675 0h-21.35c-.732 0-1.325.593-1.325 1.325v21.351c0 .731.593 1.324 1.325 1.324h11.495v-9.294h-3.128v-3.622h3.128v-2.671c0-3.1 1.893-4.788 4.659-4.788 1.325 0 2.463.099 2.795.143v3.24l-1.918.001c-1.504 0-1.795.715-1.795 1.763v2.312h3.587l-.467 3.622h-3.12v9.293h6.116c.73 0 1.323-.593 1.323-1.325v-21.35c0-.732-.593-1.325-1.325-1.325z"/></svg></a>
+        <a href="#" aria-label="TikTok" style="color: white;"><svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M12.525.02c1.31-.02 2.61-.01 3.91-.04.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-1.43.08-2.86-.31-4.08-1.03-2.02-1.19-3.44-3.37-3.65-5.71-.02-.5-.03-1-.01-1.49.18-1.9 1.12-3.72 2.58-4.96 1.66-1.44 3.98-2.13 6.15-1.72.02 1.48-.04 2.96-.04 4.44-.99-.32-2.15-.23-3.02.37-.63.41-1.11 1.04-1.36 1.75-.21.51-.15 1.07-.14 1.61.24 1.64 1.82 3.02 3.5 2.87 1.12-.01 2.19-.66 2.77-1.61.19-.33.4-.67.41-1.06.1-1.79.06-3.57.07-5.36.01-4.03-.01-8.05.02-12.07z"/></svg></a>
+      </div>
       <p>&copy; 2026 All Rights Reserved.</p>
       <div class="footer-credits">
         <span>Website by</span>
         <a href="https://irondigitalmi.com" target="_blank" rel="noopener">
-          <img src="iron-digital-logo%20(3).webp" alt="Iron Digital MI Logo">
+          <img src="iron-digital-logo (3).webp" alt="Iron Digital MI Logo">
           <span>Iron Digital MI</span>
         </a>
       </div>
