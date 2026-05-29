@@ -228,17 +228,10 @@
         .taser-trust-inner .trust-bolt { margin: 0 auto; }
       }
       .trust-bolt {
-        width: 64px;
-        height: 64px;
-        background: rgba(255,204,0,0.1);
-        border: 2px solid rgba(255,204,0,0.35);
-        border-radius: 50%;
         display: flex;
         align-items: center;
         justify-content: center;
-        font-size: 1.8rem;
         flex-shrink: 0;
-        filter: drop-shadow(0 0 16px rgba(255,204,0,0.3));
       }
       .taser-trust-inner h3 {
         margin: 0 0 8px 0;
@@ -773,6 +766,44 @@
         .card-title { font-size: 1.4rem; }
         .card-auth-badge { font-size: 0.6rem; }
       }
+
+      /* Official brand assets */
+      .hero-dealer-seal {
+        width: 130px;
+        height: 130px;
+        object-fit: contain;
+        margin-bottom: 26px;
+        filter: drop-shadow(0 0 22px rgba(255,204,0,0.35));
+      }
+      .hero-taser-logo {
+        height: 38px;
+        width: auto;
+        max-width: 240px;
+        margin-top: 44px;
+        opacity: 0.9;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+      }
+      .trust-logo-img {
+        height: 52px;
+        width: auto;
+        max-width: 200px;
+        display: block;
+        filter: drop-shadow(0 0 14px rgba(255,204,0,0.25));
+      }
+      .card-product-wordmark {
+        height: 34px;
+        width: auto;
+        max-width: 100%;
+        display: block;
+        margin-bottom: 10px;
+      }
+      @media (max-width: 768px) {
+        .hero-dealer-seal { width: 100px; height: 100px; }
+        .hero-taser-logo { height: 30px; }
+        .trust-logo-img { height: 42px; }
+      }
     </style>
   </head>
   <body>
@@ -829,10 +860,7 @@
          HERO
          ============================================================ -->
     <section class="taser-hero">
-      <div class="axon-reseller-badge">
-        <svg viewBox="0 0 24 24" fill="#FFCC00"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
-        Official Axon Authorized Reseller
-      </div>
+      <img src="taser/dealer-badge.png" alt="Authorized TASER Dealer" class="hero-dealer-seal">
       <h1>Empowering Personal Protection:<br><em>Authorized TASER® Energy Weapons</em><br>in Ferndale &amp; Metro Detroit.</h1>
       <p class="hero-sub">
         Secure your home, business, and family with genuine TASER® civilian energy weapons.
@@ -842,6 +870,7 @@
         <a href="#products" class="btn-axon-yellow">Explore Device Models</a>
         <a href="contact.html" class="btn-axon-outline">Speak with a Security Advisor</a>
       </div>
+      <img src="taser/logo-energy.png" alt="TASER" class="hero-taser-logo">
     </section>
 
     <!-- ============================================================
@@ -849,7 +878,9 @@
          ============================================================ -->
     <section class="taser-trust-band">
       <div class="taser-trust-inner">
-        <div class="trust-bolt">⚡</div>
+        <div class="trust-bolt">
+          <img src="taser/logo-civilian.png" alt="TASER from Axon" class="trust-logo-img">
+        </div>
         <div>
           <h3>Official Axon Authorized Reseller — Metro Detroit</h3>
           <p>
@@ -878,15 +909,8 @@
             </div>
             <span class="card-range-badge">15-FT Range</span>
           </div>
-          <div class="card-device-area">
-            <svg class="card-device-icon" viewBox="0 0 64 64" fill="none">
-              <path d="M5 22 L45 22 L52 30 L52 44 L45 44 L5 44 Z" fill="#0e1730" stroke="#FFCC00" stroke-width="1.8"/>
-              <path d="M5 44 L5 56 L18 56 L18 44" fill="#0e1730" stroke="#FFCC00" stroke-width="1.8"/>
-              <circle cx="30" cy="33" r="4.5" fill="#050d1a" stroke="#FFCC00" stroke-width="1.5"/>
-              <circle cx="30" cy="33" r="1.8" fill="#FFCC00" opacity="0.8"/>
-              <rect x="50" y="24" width="9" height="5" rx="1.5" fill="#1a2540" stroke="#FFCC00" stroke-width="1"/>
-              <rect x="50" y="38" width="9" height="5" rx="1.5" fill="#1a2540" stroke="#FFCC00" stroke-width="1"/>
-            </svg>
+          <div class="card-device-area" style="flex-direction: column; align-items: flex-start;">
+            <img src="taser/pulse2-white.svg" alt="TASER Pulse 2" class="card-product-wordmark">
             <div class="card-device-tagline">
               <strong>Concealed Carry · Commuters</strong>
               Compact gun-profile design, laser targeting, carry-ready.
@@ -923,16 +947,8 @@
             </div>
             <span class="card-range-badge">15-FT Range</span>
           </div>
-          <div class="card-device-area">
-            <svg class="card-device-icon" viewBox="0 0 64 64" fill="none">
-              <rect x="6" y="22" width="48" height="22" rx="6" fill="#0e1730" stroke="#FFCC00" stroke-width="1.8"/>
-              <rect x="13" y="29" width="8" height="10" rx="2" fill="#1a2540"/>
-              <circle cx="42" cy="33" r="4.5" fill="#050d1a" stroke="#FFCC00" stroke-width="1.5"/>
-              <circle cx="42" cy="33" r="1.8" fill="#FFCC00" opacity="0.8"/>
-              <path d="M30 29 L34 33 L30 37" stroke="#FFCC00" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-              <rect x="53" y="24" width="7" height="5" rx="1" fill="#1a2540" stroke="#FFCC00" stroke-width="1"/>
-              <rect x="53" y="35" width="7" height="5" rx="1" fill="#1a2540" stroke="#FFCC00" stroke-width="1"/>
-            </svg>
+          <div class="card-device-area" style="flex-direction: column; align-items: flex-start;">
+            <img src="taser/bolt2-white.svg" alt="TASER Bolt 2" class="card-product-wordmark">
             <div class="card-device-tagline">
               <strong>Home Defense · Bedside Storage</strong>
               Discreet flashlight form-factor, no weapon silhouette.
@@ -969,17 +985,8 @@
             </div>
             <span class="card-range-badge">Contact Stun</span>
           </div>
-          <div class="card-device-area">
-            <svg class="card-device-icon" viewBox="0 0 64 64" fill="none">
-              <rect x="22" y="6" width="20" height="46" rx="10" fill="#0e1730" stroke="#FFCC00" stroke-width="1.8"/>
-              <rect x="26" y="9" width="12" height="4" rx="2" fill="#1a2540"/>
-              <circle cx="32" cy="54" r="6" fill="#050d1a" stroke="#FFCC00" stroke-width="1.8"/>
-              <path d="M28.5 51.5 L32 55 L35.5 51.5" stroke="#FFCC00" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-              <circle cx="32" cy="16" r="3.5" fill="#FFCC00" opacity="0.9"/>
-              <circle cx="32" cy="16" r="6" fill="none" stroke="#FFCC00" stroke-width="0.8" opacity="0.3"/>
-              <line x1="26" y1="28" x2="38" y2="28" stroke="#1a2540" stroke-width="1.5"/>
-              <line x1="26" y1="35" x2="38" y2="35" stroke="#1a2540" stroke-width="1"/>
-            </svg>
+          <div class="card-device-area" style="flex-direction: column; align-items: flex-start;">
+            <img src="taser/strikelight2-white.svg" alt="TASER StrikeLight 2" class="card-product-wordmark">
             <div class="card-device-tagline">
               <strong>Dog Walkers · Late-Night Workers</strong>
               Stun flashlight — utility and protection in one.
