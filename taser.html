@@ -667,10 +667,111 @@
       }
       .trademark-notice a:hover { color: #FFCC00; }
 
+      /* ============================================
+         MOBILE — NO HORIZONTAL SCROLL
+         ============================================ */
+
+      /* Products grid: single column on any screen that can't fit 310px */
+      .products-grid {
+        grid-template-columns: repeat(auto-fit, minmax(min(310px, 100%), 1fr));
+      }
+
       @media (max-width: 768px) {
+        /* Page-level overflow guard */
+        .taser-hero,
+        .taser-trust-band,
+        .taser-section,
+        .taser-cta-band,
+        .trademark-notice {
+          overflow-x: hidden;
+          width: 100%;
+        }
+
+        /* Hero */
+        .taser-hero { padding: 70px 5% 60px; }
+        .taser-hero h1 { font-size: clamp(1.8rem, 7vw, 2.8rem); word-break: break-word; }
+        .taser-hero .hero-sub { font-size: 0.9rem; }
+
+        /* Authorized reseller badge — wrap text, shrink padding */
+        .axon-reseller-badge {
+          padding: 8px 14px;
+          font-size: 0.68rem;
+          letter-spacing: 1.5px;
+          text-align: center;
+          white-space: normal;
+          max-width: 85vw;
+        }
+
+        /* Hero CTA buttons — full width on small screens */
+        .hero-cta-row { flex-direction: column; align-items: center; }
+        .btn-axon-yellow,
+        .btn-axon-outline {
+          width: 100%;
+          max-width: 320px;
+          text-align: center;
+          padding: 15px 20px;
+        }
+
+        /* Trust band */
+        .taser-trust-inner { grid-template-columns: 1fr; text-align: center; gap: 18px; }
+        .trust-bolt { margin: 0 auto; }
+
+        /* Section spacing */
+        .taser-section { padding: 55px 5%; }
+        .taser-section-title { font-size: clamp(1.7rem, 6vw, 2.8rem); word-break: break-word; }
+        .taser-section-sub { font-size: 0.88rem; margin-bottom: 35px; }
+
+        /* Products grid: force single column */
         .products-grid { grid-template-columns: 1fr; }
-        .card-footer { flex-direction: column; align-items: flex-start; }
-        .taser-section { padding: 60px 5%; }
+
+        /* Card header: stack range badge below title */
+        .card-header {
+          flex-direction: column;
+          gap: 8px;
+          padding: 22px 20px 18px;
+        }
+        .card-range-badge {
+          white-space: normal;
+          align-self: flex-start;
+        }
+        .card-device-area { padding: 18px 20px; }
+        .card-body { padding: 20px 20px; }
+        .card-footer {
+          flex-direction: column;
+          align-items: flex-start;
+          gap: 14px;
+          padding: 18px 20px 22px;
+        }
+        .card-cta {
+          width: 100%;
+          text-align: center;
+          padding: 14px 16px;
+        }
+
+        /* Value grid */
+        .value-grid { grid-template-columns: 1fr; }
+        .value-card { padding: 24px 20px; }
+
+        /* FAQ */
+        .faq-question { padding: 18px 20px; font-size: 0.88rem; }
+        .faq-answer-inner { padding: 14px 20px 18px; }
+
+        /* CTA band */
+        .taser-cta-band { padding: 60px 5%; }
+        .taser-cta-band h2 { font-size: clamp(1.8rem, 6vw, 2.8rem); }
+        .cta-buttons { flex-direction: column; align-items: center; }
+        .cta-buttons .btn-axon-yellow,
+        .cta-buttons .btn-axon-outline {
+          width: 100%;
+          max-width: 320px;
+          text-align: center;
+        }
+      }
+
+      @media (max-width: 480px) {
+        .axon-reseller-badge { font-size: 0.62rem; letter-spacing: 1px; padding: 7px 12px; }
+        .card-title { font-size: 1.4rem; }
+        .card-auth-badge { font-size: 0.6rem; }
       }
     </style>
   </head>
