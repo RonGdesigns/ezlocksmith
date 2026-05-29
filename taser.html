@@ -3,12 +3,12 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>TAZER® Authorized Dealer — Detroit Metro | EZ Locksmith</title>
-    <meta name="description" content="EZ Locksmith is an authorized TAZER® dealer in the Detroit metro area. Shop genuine TAZER® Bolt 2, Pulse 2, StrikeLight 2 and Professional Series devices for personal protection." />
+    <title>Authorized TASER® Energy Weapons — Detroit Metro | EZ Locksmith</title>
+    <meta name="description" content="EZ Locksmith is an official Axon authorized reseller of genuine TASER® energy weapons in the Detroit metro area. Shop TASER Pulse, Bolt 2, and StrikeLight devices locally in Ferndale, MI." />
     <meta name="robots" content="index, follow" />
     <link rel="canonical" href="https://ezlocksmithdetroit.com/taser.html" />
-    <meta property="og:title" content="TAZER® Authorized Dealer — Detroit Metro | EZ Locksmith" />
-    <meta property="og:description" content="Buy genuine TAZER® devices from an authorized dealer. EZ Locksmith Detroit carries the full TAZER consumer and professional lineup." />
+    <meta property="og:title" content="Authorized TASER® Energy Weapons — Detroit Metro | EZ Locksmith" />
+    <meta property="og:description" content="Official Axon authorized reseller. Genuine TASER® energy weapons available locally in Metro Detroit. Expert guidance from licensed security professionals." />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://ezlocksmithdetroit.com/taser.html" />
     <meta name="twitter:card" content="summary_large_image" />
@@ -17,8 +17,8 @@
     {
       "@context": "https://schema.org",
       "@type": "Store",
-      "name": "EZ Locksmith — TAZER® Authorized Dealer",
-      "description": "Authorized dealer of TAZER® brand personal protection devices in the Detroit metro area.",
+      "name": "EZ Locksmith — Axon Authorized TASER Reseller",
+      "description": "Official Axon authorized reseller of genuine TASER energy weapons serving Metro Detroit.",
       "url": "https://ezlocksmithdetroit.com/taser.html",
       "telephone": "+12487984366",
       "address": {
@@ -31,27 +31,46 @@
       },
       "hasOfferCatalog": {
         "@type": "OfferCatalog",
-        "name": "TAZER® Device Lineup",
+        "name": "TASER Civilian Energy Weapon Lineup",
         "itemListElement": [
           {
             "@type": "Offer",
-            "itemOffered": {"@type": "Product", "name": "TAZER® Bolt 2", "brand": {"@type": "Brand", "name": "TAZER"}, "description": "Discreet non-weapon form factor, 15-foot range, 30-second NMI"},
-            "price": "449.99",
-            "priceCurrency": "USD"
-          },
-          {
-            "@type": "Offer",
-            "itemOffered": {"@type": "Product", "name": "TAZER® Pulse 2", "brand": {"@type": "Brand", "name": "TAZER"}, "description": "Compact concealable design, 15-foot range, laser-assisted targeting"},
+            "itemOffered": {
+              "@type": "Product",
+              "name": "TASER Pulse 2 energy weapon",
+              "brand": {"@type": "Brand", "name": "TASER"},
+              "description": "Compact concealable TASER energy weapon, 15-foot range, laser-assisted targeting"
+            },
             "price": "399.99",
             "priceCurrency": "USD"
           },
           {
             "@type": "Offer",
-            "itemOffered": {"@type": "Product", "name": "TAZER® StrikeLight 2", "brand": {"@type": "Brand", "name": "TAZER"}, "description": "700-lumen rechargeable stun flashlight"},
+            "itemOffered": {
+              "@type": "Product",
+              "name": "TASER Bolt 2 energy weapon",
+              "brand": {"@type": "Brand", "name": "TASER"},
+              "description": "Discreet non-weapon form factor TASER energy weapon, 15-foot range"
+            },
+            "price": "449.99",
+            "priceCurrency": "USD"
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Product",
+              "name": "TASER StrikeLight 2 device",
+              "brand": {"@type": "Brand", "name": "TASER"},
+              "description": "700-lumen rechargeable stun flashlight"
+            },
             "price": "169.99",
             "priceCurrency": "USD"
           }
         ]
+      },
+      "makesOffer": {
+        "@type": "Offer",
+        "description": "In-person guidance on TASER energy weapon selection and Michigan compliance from licensed security professionals"
       }
     }
     </script>
@@ -67,19 +86,24 @@
     </script>
 
     <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
 
     <style>
       /* =============================================
-         TAZER PAGE — SCOPED STYLES
+         TASER PAGE — SCOPED STYLES
+         Axon Yellow: #FFCC00
+         Navy: #0B132B  |  Charcoal: #1C2541
          ============================================= */
 
+      /* TASER HERO */
       .taser-hero {
         padding: 110px 5%;
         text-align: center;
         background:
-          linear-gradient(rgba(0,0,0,0.9), rgba(0,0,0,0.9)),
-          radial-gradient(ellipse at 50% 0%, rgba(211,47,47,0.25) 0%, transparent 65%);
-        border-bottom: 1px solid var(--border);
+          linear-gradient(165deg, #0a0a12 0%, #0B132B 60%, #0a0a0a 100%);
+        border-bottom: 3px solid #FFCC00;
         position: relative;
         overflow: hidden;
       }
@@ -87,336 +111,505 @@
         content: '';
         position: absolute;
         inset: 0;
-        background: radial-gradient(ellipse at 50% 110%, rgba(241,196,15,0.07) 0%, transparent 55%);
+        background:
+          radial-gradient(ellipse at 20% 50%, rgba(255,204,0,0.06) 0%, transparent 50%),
+          radial-gradient(ellipse at 80% 20%, rgba(255,204,0,0.04) 0%, transparent 40%);
         pointer-events: none;
       }
       .taser-hero h1 {
-        font-size: clamp(2.4rem, 6vw, 5rem);
+        font-size: clamp(2.2rem, 5.5vw, 4.5rem);
         letter-spacing: -1px;
-        line-height: 1.05;
-        margin-bottom: 20px;
+        line-height: 1.08;
+        margin-bottom: 22px;
+        font-family: var(--display-font);
+        color: #fff;
       }
       .taser-hero h1 em {
         font-style: normal;
-        color: var(--primary);
+        color: #FFCC00;
+      }
+      .taser-hero .hero-sub {
+        color: #a0a8be;
+        max-width: 650px;
+        margin: 0 auto 42px;
+        font-size: 1.05rem;
+        line-height: 1.75;
+        font-family: 'Inter', sans-serif;
       }
 
-      /* AUTHORIZED DEALER BADGE PILL */
-      .dealer-badge-pill {
+      /* HERO CTA ROW */
+      .hero-cta-row {
+        display: flex;
+        gap: 16px;
+        justify-content: center;
+        flex-wrap: wrap;
+        margin-bottom: 40px;
+      }
+      .btn-axon-yellow {
+        display: inline-block;
+        background: #FFCC00;
+        color: #0B132B;
+        font-family: 'Inter', sans-serif;
+        font-weight: 800;
+        font-size: 0.92rem;
+        text-transform: uppercase;
+        letter-spacing: 1.5px;
+        padding: 16px 38px;
+        border-radius: 3px 14px 3px 8px;
+        text-decoration: none;
+        transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        border: 2px solid #FFCC00;
+      }
+      .btn-axon-yellow:hover {
+        background: #ffe033;
+        transform: translateY(-2px) rotate(-0.5deg);
+        box-shadow: 0 8px 24px rgba(255,204,0,0.35);
+      }
+      .btn-axon-outline {
+        display: inline-block;
+        background: transparent;
+        color: #FFCC00;
+        font-family: 'Inter', sans-serif;
+        font-weight: 700;
+        font-size: 0.92rem;
+        text-transform: uppercase;
+        letter-spacing: 1.5px;
+        padding: 16px 38px;
+        border-radius: 8px 3px 14px 3px;
+        text-decoration: none;
+        transition: all 0.3s ease;
+        border: 2px solid rgba(255,204,0,0.5);
+      }
+      .btn-axon-outline:hover {
+        background: rgba(255,204,0,0.08);
+        border-color: #FFCC00;
+        transform: translateY(-2px);
+      }
+
+      /* OFFICIAL RESELLER BADGE */
+      .axon-reseller-badge {
         display: inline-flex;
         align-items: center;
         gap: 10px;
-        background: rgba(241,196,15,0.08);
-        border: 1px solid rgba(241,196,15,0.35);
-        color: #f1c40f;
-        padding: 8px 22px;
-        border-radius: 2px 12px 2px 8px;
-        font-family: var(--mono-font);
-        font-size: 0.8rem;
-        font-weight: bold;
-        letter-spacing: 2px;
+        background: rgba(255,204,0,0.1);
+        border: 1px solid rgba(255,204,0,0.4);
+        color: #FFCC00;
+        padding: 10px 24px;
+        border-radius: 3px 12px 3px 8px;
+        font-family: 'Inter', sans-serif;
+        font-size: 0.78rem;
+        font-weight: 700;
+        letter-spacing: 2.5px;
         text-transform: uppercase;
         margin-bottom: 30px;
       }
+      .axon-reseller-badge svg {
+        width: 16px;
+        height: 16px;
+        flex-shrink: 0;
+      }
 
-      /* DEALER TRUST BAND */
+      /* TRUST BAND */
       .taser-trust-band {
-        background: #070a07;
-        border-top: 2px solid #f1c40f;
-        border-bottom: 1px solid var(--border);
-        padding: 40px 5%;
+        background: #070b18;
+        border-bottom: 1px solid #1e2a45;
+        padding: 44px 5%;
       }
       .taser-trust-inner {
-        max-width: 1000px;
+        max-width: 1050px;
         margin: 0 auto;
         display: grid;
         grid-template-columns: auto 1fr;
-        gap: 30px;
+        gap: 32px;
         align-items: center;
       }
       @media (max-width: 768px) {
         .taser-trust-inner { grid-template-columns: 1fr; text-align: center; }
+        .taser-trust-inner .trust-bolt { margin: 0 auto; }
       }
-      .taser-trust-icon {
-        font-size: 3.5rem;
-        line-height: 1;
-        filter: drop-shadow(0 0 14px rgba(241,196,15,0.55));
+      .trust-bolt {
+        width: 64px;
+        height: 64px;
+        background: rgba(255,204,0,0.1);
+        border: 2px solid rgba(255,204,0,0.35);
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 1.8rem;
+        flex-shrink: 0;
+        filter: drop-shadow(0 0 16px rgba(255,204,0,0.3));
       }
       .taser-trust-inner h3 {
         margin: 0 0 8px 0;
-        font-family: var(--mono-font);
-        font-size: 1.1rem;
-        color: #f1c40f;
+        font-family: 'Inter', sans-serif;
+        font-size: 1rem;
+        color: #FFCC00;
         text-transform: uppercase;
         letter-spacing: 2px;
+        font-weight: 800;
       }
       .taser-trust-inner p {
         margin: 0;
-        color: var(--text-muted);
+        color: #8090b0;
+        font-size: 0.92rem;
+        line-height: 1.75;
+        font-family: 'Inter', sans-serif;
+      }
+
+      /* SECTION SHELLS */
+      .taser-section {
+        padding: 90px 5%;
+        border-bottom: 1px solid #1a1a2e;
+      }
+      .taser-section.navy-bg { background: #070b18; }
+      .taser-section.dark-bg { background: #0a0a0a; }
+      .taser-section.charcoal-bg { background: #0d1020; }
+
+      .taser-section-label {
+        font-family: 'Inter', sans-serif;
+        font-size: 0.72rem;
+        font-weight: 800;
+        letter-spacing: 3px;
+        text-transform: uppercase;
+        color: #FFCC00;
+        margin-bottom: 12px;
+        display: block;
+      }
+      .taser-section-title {
+        font-family: var(--display-font);
+        font-size: clamp(2rem, 4.5vw, 3.5rem);
+        color: #fff;
+        line-height: 1.05;
+        margin-bottom: 16px;
+        letter-spacing: -0.5px;
+      }
+      .taser-section-sub {
+        color: #6a7898;
+        font-family: 'Inter', sans-serif;
         font-size: 0.95rem;
+        margin-bottom: 55px;
         line-height: 1.7;
+        max-width: 580px;
       }
 
-      /* PRODUCTS SECTION */
-      .taser-products-section {
-        padding: 80px 5%;
-        background: var(--secondary);
-        border-bottom: 1px solid var(--border);
-      }
-      .taser-products-grid {
+      /* PRODUCT CARDS */
+      .products-grid {
         display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-        gap: 30px;
-        margin-top: 50px;
+        grid-template-columns: repeat(auto-fit, minmax(310px, 1fr));
+        gap: 28px;
       }
-
-      /* PRODUCT CARD */
-      .taser-product-card {
-        background: var(--bg-light);
-        border: 1px solid var(--border);
-        border-top: 3px solid var(--primary);
-        border-radius: 4px 20px 4px 8px;
-        padding: 35px 28px;
+      .product-card {
+        background: #fff;
+        border-radius: 14px;
+        overflow: hidden;
+        border: 1px solid #e8ecf4;
+        box-shadow: 0 4px 20px rgba(11,19,43,0.12);
+        transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
         display: flex;
         flex-direction: column;
-        transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-        position: relative;
-        overflow: hidden;
       }
-      .taser-product-card.pro-card {
-        border-top-color: #f1c40f;
-        background: #0d0d00;
-      }
-      .taser-product-card::after {
-        content: '';
-        position: absolute;
-        top: -40px; right: -40px;
-        width: 120px; height: 120px;
-        background: radial-gradient(circle, rgba(241,196,15,0.04) 0%, transparent 70%);
-        pointer-events: none;
-      }
-      .taser-product-card:hover {
-        transform: translateY(-8px);
-        border-radius: 20px 4px 20px 4px;
-        border-top-width: 5px;
-        box-shadow: 0 20px 45px rgba(0,0,0,0.55);
+      .product-card:hover {
+        transform: translateY(-6px);
+        box-shadow: 0 16px 40px rgba(11,19,43,0.18), 0 0 0 2px #FFCC00;
       }
 
-      .product-category-badge {
+      /* Card Header — navy panel */
+      .card-header {
+        background: #0B132B;
+        padding: 28px 28px 24px;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        gap: 12px;
+      }
+      .card-header-left { flex: 1; }
+      .card-auth-badge {
         display: inline-block;
-        font-family: var(--mono-font);
-        font-size: 0.68rem;
-        font-weight: bold;
+        font-family: 'Inter', sans-serif;
+        font-size: 0.65rem;
+        font-weight: 700;
         letter-spacing: 2px;
         text-transform: uppercase;
-        padding: 4px 12px;
-        border-radius: 2px;
-        margin-bottom: 22px;
-        width: fit-content;
+        color: #FFCC00;
+        margin-bottom: 8px;
       }
-      .badge-consumer {
-        background: rgba(46,204,113,0.08);
-        border: 1px solid rgba(46,204,113,0.3);
-        color: #2ecc71;
-      }
-      .badge-professional {
-        background: rgba(241,196,15,0.08);
-        border: 1px solid rgba(241,196,15,0.3);
-        color: #f1c40f;
-      }
-
-      .product-device-icon {
-        width: 86px;
-        height: 86px;
-        margin-bottom: 22px;
-      }
-
-      .taser-product-card h3 {
-        font-size: 1.9rem;
-        margin: 0 0 6px 0;
+      .card-title {
+        font-family: var(--display-font);
+        font-size: 1.6rem;
         color: #fff;
+        margin: 0;
         line-height: 1.1;
+        letter-spacing: -0.3px;
       }
-      .product-tagline {
-        font-family: var(--mono-font);
-        font-size: 0.75rem;
-        color: var(--text-muted);
-        text-transform: uppercase;
-        letter-spacing: 1px;
-        margin-bottom: 22px;
+      .card-range-badge {
+        background: rgba(255,255,255,0.1);
+        border: 1px solid rgba(255,255,255,0.18);
+        color: #fff;
+        font-family: 'Inter', sans-serif;
+        font-size: 0.7rem;
+        font-weight: 700;
+        padding: 6px 12px;
+        border-radius: 4px;
+        white-space: nowrap;
+        letter-spacing: 0.5px;
+        flex-shrink: 0;
       }
 
-      .product-specs {
-        list-style: none;
-        padding: 0;
-        margin: 0 0 0 0;
+      /* Card device icon area */
+      .card-device-area {
+        background: #0e1730;
+        padding: 22px 28px;
+        display: flex;
+        align-items: center;
+        gap: 16px;
+        border-bottom: 1px solid #1e2a45;
+      }
+      .card-device-icon {
+        width: 64px;
+        height: 64px;
+        flex-shrink: 0;
+      }
+      .card-device-tagline {
+        font-family: 'Inter', sans-serif;
+        font-size: 0.82rem;
+        color: #7a8aaa;
+        line-height: 1.5;
+      }
+      .card-device-tagline strong {
+        display: block;
+        color: #c0cadf;
+        font-size: 0.78rem;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        margin-bottom: 4px;
+      }
+
+      /* Card body */
+      .card-body {
+        padding: 24px 28px;
         flex: 1;
         display: flex;
         flex-direction: column;
-        gap: 9px;
       }
-      .product-specs li {
+      .card-desc {
+        font-family: 'Inter', sans-serif;
+        font-size: 0.88rem;
+        color: #4a5568;
+        line-height: 1.7;
+        margin-bottom: 20px;
+      }
+      .card-specs {
+        list-style: none;
+        padding: 0;
+        margin: 0 0 24px 0;
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+      }
+      .card-specs li {
         display: flex;
         align-items: flex-start;
         gap: 10px;
-        color: #bbb;
-        font-size: 0.88rem;
+        font-family: 'Inter', sans-serif;
+        font-size: 0.82rem;
+        color: #2d3748;
         line-height: 1.4;
       }
-      .product-specs li::before {
-        content: '⚡';
-        color: #f1c40f;
-        font-size: 0.72rem;
+      .card-specs li::before {
+        content: '';
+        width: 6px;
+        height: 6px;
+        background: #FFCC00;
+        border-radius: 50%;
         flex-shrink: 0;
-        margin-top: 2px;
+        margin-top: 5px;
       }
 
-      .product-price {
-        font-family: var(--mono-font);
-        font-size: 1.9rem;
-        font-weight: bold;
+      /* Card footer */
+      .card-footer {
+        padding: 20px 28px 26px;
+        border-top: 1px solid #edf2f7;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 16px;
+        flex-wrap: wrap;
+      }
+      .card-price-block .card-price-label {
+        font-family: 'Inter', sans-serif;
+        font-size: 0.65rem;
+        font-weight: 700;
+        letter-spacing: 1.5px;
+        text-transform: uppercase;
+        color: #9aa3b4;
+        margin-bottom: 2px;
+      }
+      .card-price-block .card-price {
+        font-family: 'Inter', sans-serif;
+        font-size: 2rem;
+        font-weight: 900;
+        color: #0B132B;
+        line-height: 1;
+      }
+      .card-price-block.pro-price .card-price {
+        font-size: 1.1rem;
+        color: #4a5568;
+        font-weight: 600;
+      }
+      .card-cta {
+        display: inline-block;
+        background: #0B132B;
         color: #fff;
-        margin-top: 24px;
-        padding-top: 22px;
-        border-top: 1px solid var(--border);
+        font-family: 'Inter', sans-serif;
+        font-weight: 700;
+        font-size: 0.8rem;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        padding: 12px 22px;
+        border-radius: 8px;
+        text-decoration: none;
+        transition: all 0.3s ease;
+        white-space: nowrap;
+        border: 2px solid transparent;
+      }
+      .card-cta:hover {
+        background: #FFCC00;
+        color: #0B132B;
+        border-color: #FFCC00;
+      }
+      .card-cta.pro-cta {
+        background: transparent;
+        border-color: #0B132B;
+        color: #0B132B;
+      }
+      .card-cta.pro-cta:hover {
+        background: #0B132B;
+        color: #fff;
+      }
+
+      /* IN-STOCK INDICATOR */
+      .in-stock-row {
+        display: flex;
+        align-items: center;
+        gap: 7px;
+        font-family: 'Inter', sans-serif;
+        font-size: 0.72rem;
+        font-weight: 700;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        color: #2ecc71;
         margin-bottom: 18px;
       }
-      .product-price sup {
-        font-size: 1rem;
-        font-weight: normal;
-        color: var(--text-muted);
-        vertical-align: super;
-      }
-      .product-price span {
-        font-size: 0.85rem;
-        color: var(--text-muted);
-        font-weight: normal;
-        display: block;
-        margin-top: 2px;
-      }
-      .product-price.pro-price {
-        color: #f1c40f;
-        font-size: 1.2rem;
+      .in-stock-dot {
+        width: 7px;
+        height: 7px;
+        background: #2ecc71;
+        border-radius: 50%;
+        flex-shrink: 0;
+        box-shadow: 0 0 6px rgba(46,204,113,0.6);
       }
 
-      .product-cta {
-        display: block;
-        text-align: center;
-        background: var(--primary);
-        color: #fff;
-        text-decoration: none;
-        padding: 14px 20px;
-        font-family: var(--mono-font);
-        font-weight: bold;
-        font-size: 0.88rem;
-        text-transform: uppercase;
-        letter-spacing: 1px;
-        border-radius: 2px 10px 2px 6px;
-        transition: all 0.3s;
-        border: 1px solid transparent;
-      }
-      .product-cta:hover {
-        background: var(--primary-hover);
-        transform: rotate(-1deg);
-      }
-      .product-cta.pro-cta {
-        background: transparent;
-        border-color: #f1c40f;
-        color: #f1c40f;
-      }
-      .product-cta.pro-cta:hover {
-        background: #f1c40f;
-        color: #000;
-        transform: rotate(-1deg);
-      }
-
-      /* COMPARISON TABLE */
-      .taser-compare-section {
-        padding: 80px 5%;
-        background: var(--bg-light);
-        border-bottom: 1px solid var(--border);
-      }
-      .compare-scroll {
-        overflow-x: auto;
-        margin-top: 45px;
-        border-radius: 4px 16px 4px 8px;
-        border: 1px solid var(--border);
-      }
-      .compare-table {
-        width: 100%;
-        border-collapse: collapse;
-        font-family: var(--mono-font);
-        font-size: 0.82rem;
-        white-space: nowrap;
-      }
-      .compare-table th {
-        padding: 15px 22px;
-        text-align: left;
-        background: #0a0a0a;
-        border-bottom: 2px solid var(--primary);
-        color: #fff;
-        font-size: 0.78rem;
-        text-transform: uppercase;
-        letter-spacing: 1px;
-      }
-      .compare-table td {
-        padding: 13px 22px;
-        border-bottom: 1px solid var(--border);
-        color: #bbb;
-      }
-      .compare-table tr:last-child td { border-bottom: none; }
-      .compare-table tr:hover td {
-        background: var(--secondary);
-        color: #fff;
-      }
-      .compare-table .check { color: #2ecc71; }
-      .compare-table .model-name { color: #fff; font-weight: bold; }
-      .compare-table .price-cell { color: var(--primary); font-weight: bold; }
-      .compare-table .pro-label { color: #f1c40f; }
-
-      /* WHY AUTHORIZED DEALER */
-      .taser-why-section {
-        padding: 80px 5%;
-        background: var(--secondary);
-        border-bottom: 1px solid var(--border);
-      }
-      .taser-why-grid {
+      /* VALUE PROP SECTION */
+      .value-grid {
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
         gap: 24px;
-        margin-top: 50px;
       }
-      .taser-why-item {
-        padding: 28px 22px;
-        background: var(--bg-light);
-        border-radius: 4px 16px 4px 8px;
-        border-left: 3px solid #f1c40f;
+      .value-card {
+        padding: 30px 26px;
+        background: #0d1020;
+        border-radius: 6px 18px 6px 10px;
+        border: 1px solid #1e2a45;
+        border-left: 3px solid #FFCC00;
         transition: transform 0.3s ease;
       }
-      .taser-why-item:hover {
-        transform: translateY(-4px);
+      .value-card:hover { transform: translateY(-4px); }
+      .value-card-icon {
+        font-size: 1.8rem;
+        margin-bottom: 14px;
+        display: block;
+        filter: drop-shadow(0 0 8px rgba(255,204,0,0.3));
       }
-      .taser-why-item h4 {
-        font-family: var(--mono-font);
+      .value-card h4 {
+        font-family: 'Inter', sans-serif;
         font-size: 0.9rem;
+        font-weight: 800;
         text-transform: uppercase;
-        letter-spacing: 1px;
-        color: #f1c40f;
+        letter-spacing: 1.5px;
+        color: #fff;
         margin: 0 0 10px 0;
       }
-      .taser-why-item p {
+      .value-card p {
+        font-family: 'Inter', sans-serif;
+        font-size: 0.87rem;
+        color: #6a7898;
         margin: 0;
-        color: var(--text-muted);
+        line-height: 1.7;
+      }
+
+      /* FAQ */
+      .faq-list {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        max-width: 800px;
+      }
+      .faq-item {
+        background: #0d1020;
+        border: 1px solid #1e2a45;
+        border-radius: 4px 16px 4px 10px;
+        overflow: hidden;
+      }
+      .faq-question {
+        width: 100%;
+        background: none;
+        border: none;
+        padding: 22px 26px;
+        text-align: left;
+        color: #fff;
+        font-family: 'Inter', sans-serif;
+        font-size: 0.95rem;
+        font-weight: 700;
+        cursor: pointer;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 20px;
+        transition: background 0.2s;
+      }
+      .faq-question:hover { background: rgba(255,204,0,0.05); }
+      .faq-question .faq-icon {
+        color: #FFCC00;
+        font-size: 1.3rem;
+        font-weight: 300;
+        flex-shrink: 0;
+        transition: transform 0.3s ease;
+        font-family: 'Inter', sans-serif;
+      }
+      .faq-item.open .faq-icon { transform: rotate(45deg); }
+      .faq-answer {
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.35s ease;
+      }
+      .faq-item.open .faq-answer { max-height: 300px; }
+      .faq-answer-inner {
+        padding: 0 26px 22px;
+        font-family: 'Inter', sans-serif;
         font-size: 0.88rem;
-        line-height: 1.65;
+        color: #6a7898;
+        line-height: 1.8;
+        border-top: 1px solid #1e2a45;
+        padding-top: 18px;
       }
 
       /* CTA BAND */
       .taser-cta-band {
         padding: 90px 5%;
         text-align: center;
-        background: linear-gradient(160deg, #0a0a0a 0%, #140000 100%);
-        border-bottom: 1px solid var(--border);
+        background: linear-gradient(160deg, #070b18 0%, #0B132B 100%);
+        border-bottom: 1px solid #1e2a45;
         position: relative;
         overflow: hidden;
       }
@@ -425,63 +618,59 @@
         position: absolute;
         top: 50%; left: 50%;
         transform: translate(-50%, -50%);
-        width: 700px; height: 350px;
-        background: radial-gradient(ellipse, rgba(211,47,47,0.1) 0%, transparent 70%);
+        width: 800px; height: 400px;
+        background: radial-gradient(ellipse, rgba(255,204,0,0.07) 0%, transparent 65%);
         pointer-events: none;
       }
       .taser-cta-band h2 {
+        font-family: var(--display-font);
         font-size: clamp(2rem, 4.5vw, 3.5rem);
+        color: #fff;
         margin-bottom: 16px;
         position: relative;
       }
-      .taser-cta-band > p {
-        color: var(--text-muted);
-        max-width: 580px;
-        margin: 0 auto 40px;
-        font-size: 1.05rem;
+      .taser-cta-band p {
+        color: #6a7898;
+        max-width: 560px;
+        margin: 0 auto 42px;
+        font-family: 'Inter', sans-serif;
+        font-size: 1rem;
+        line-height: 1.75;
         position: relative;
       }
       .cta-buttons {
         display: flex;
-        gap: 18px;
+        gap: 16px;
         justify-content: center;
         flex-wrap: wrap;
         position: relative;
       }
-      .btn-outline-gold {
-        display: inline-block;
-        padding: 16px 38px;
-        border: 2px solid #f1c40f;
-        color: #f1c40f;
-        text-decoration: none;
-        font-family: var(--mono-font);
-        font-weight: bold;
-        font-size: 0.95rem;
-        text-transform: uppercase;
-        letter-spacing: 1px;
-        border-radius: 4px 16px 4px 8px;
-        transition: all 0.3s;
-        background: rgba(241,196,15,0.04);
-      }
-      .btn-outline-gold:hover {
-        background: #f1c40f;
-        color: #000;
-      }
 
-      /* TRADEMARK */
+      /* TRADEMARK NOTICE */
       .trademark-notice {
-        padding: 18px 5%;
+        padding: 22px 5%;
         text-align: center;
-        background: #000;
-        border-top: 1px solid var(--border);
+        background: #050508;
+        border-top: 1px solid #1a1a2e;
       }
       .trademark-notice p {
-        font-family: var(--mono-font);
+        font-family: 'Inter', sans-serif;
         font-size: 0.68rem;
-        color: #444;
+        color: #3a4055;
         max-width: 900px;
         margin: 0 auto;
-        line-height: 1.7;
+        line-height: 1.8;
+      }
+      .trademark-notice a {
+        color: #5a6380;
+        text-decoration: none;
+      }
+      .trademark-notice a:hover { color: #FFCC00; }
+
+      @media (max-width: 768px) {
+        .products-grid { grid-template-columns: 1fr; }
+        .card-footer { flex-direction: column; align-items: flex-start; }
+        .taser-section { padding: 60px 5%; }
       }
     </style>
   </head>
@@ -519,7 +708,6 @@
               <li><a href="historic.html">Historic &amp; Skeleton Keys</a></li>
             </ul>
           </li>
-          <li><a href="taser.html" style="color: #f1c40f;">TAZER® Devices</a></li>
           <li class="has-dropdown" id="areas-dropdown">
             <a href="index.html#areas">Service Areas <span>▼</span></a>
             <ul class="submenu" style="min-width: 200px">
@@ -536,313 +724,331 @@
       </nav>
     </header>
 
-    <!-- HERO -->
+    <!-- ============================================================
+         HERO
+         ============================================================ -->
     <section class="taser-hero">
-      <div class="dealer-badge-pill">
-        <svg width="16" height="16" viewBox="0 0 24 24" fill="#f1c40f"><path d="M9 3L5 17h6l-2 7 10-12h-7z"/></svg>
-        Authorized TAZER® Dealer — Detroit Metro
+      <div class="axon-reseller-badge">
+        <svg viewBox="0 0 24 24" fill="#FFCC00"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+        Official Axon Authorized Reseller
       </div>
-      <h1>PERSONAL PROTECTION.<br><em>POWERED BY TAZER®</em></h1>
-      <p style="color: var(--text-muted); max-width: 620px; margin: 0 auto 40px; font-size: 1.05rem; line-height: 1.7;">
-        EZ Locksmith is a proud authorized dealer of TAZER® devices by Axon —
-        the same less-lethal technology trusted by law enforcement, now available
-        for personal and professional protection in Michigan.
+      <h1>Empowering Personal Protection:<br><em>Authorized TASER® Energy Weapons</em><br>in Ferndale &amp; Metro Detroit.</h1>
+      <p class="hero-sub">
+        Secure your home, business, and family with genuine TASER® civilian energy weapons.
+        Provided locally by EZ Locksmith — your trusted physical and personal security experts in Metro Detroit.
       </p>
-      <a href="#products" class="btn-call" style="padding: 18px 48px; font-family: var(--mono-font); font-size: 1rem; text-transform: uppercase; letter-spacing: 1px;">
-        SHOP TAZER® DEVICES ↓
-      </a>
+      <div class="hero-cta-row">
+        <a href="#products" class="btn-axon-yellow">Explore Device Models</a>
+        <a href="contact.html" class="btn-axon-outline">Speak with a Security Advisor</a>
+      </div>
     </section>
 
-    <!-- AUTHORIZED DEALER TRUST BAND -->
+    <!-- ============================================================
+         AUTHORIZED RESELLER TRUST BAND
+         ============================================================ -->
     <section class="taser-trust-band">
       <div class="taser-trust-inner">
-        <div class="taser-trust-icon">⚡</div>
+        <div class="trust-bolt">⚡</div>
         <div>
-          <h3>Official Authorized TAZER® Dealer — Metro Detroit</h3>
-          <p>Every device we sell is sourced directly through authorized Axon distribution channels — 100% genuine, full manufacturer warranty, and Safe Escape Replacement Guarantee eligible. Don't gamble on third-party marketplace listings when your safety is on the line.</p>
+          <h3>Official Axon Authorized Reseller — Metro Detroit</h3>
+          <p>
+            Every TASER® energy weapon we sell is sourced directly through authorized Axon distribution channels — 100% genuine, full manufacturer warranty, and Safe Escape Replacement Guarantee eligible. Don't gamble on third-party marketplace listings when your safety depends on it.
+          </p>
         </div>
       </div>
     </section>
 
-    <!-- PRODUCTS -->
-    <section class="taser-products-section" id="products">
-      <h2 class="section-title">TAZER® DEVICE LINEUP</h2>
-      <p class="section-subtitle">Consumer &amp; Professional Series — Genuine Devices In Stock</p>
+    <!-- ============================================================
+         PRODUCT GRID
+         ============================================================ -->
+    <section class="taser-section dark-bg" id="products">
+      <span class="taser-section-label">Civilian Energy Weapon Lineup</span>
+      <h2 class="taser-section-title">TASER® Devices In Stock Locally</h2>
+      <p class="taser-section-sub">Handle before you buy. Every model below is available at our Ferndale location with hands-on guidance from licensed security professionals.</p>
 
-      <div class="taser-products-grid">
+      <div class="products-grid">
 
-        <!-- BOLT 2 -->
-        <div class="taser-product-card">
-          <span class="product-category-badge badge-consumer">Consumer Series</span>
-          <svg class="product-device-icon" viewBox="0 0 86 86" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <rect x="8" y="28" width="62" height="30" rx="7" fill="#1a1a1a" stroke="#d32f2f" stroke-width="2"/>
-            <rect x="16" y="36" width="11" height="14" rx="3" fill="#2a2a2a"/>
-            <circle cx="54" cy="43" r="6" fill="#111" stroke="#d32f2f" stroke-width="1.5"/>
-            <path d="M39 39 L44 43 L39 47" stroke="#f1c40f" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-            <rect x="68" y="32" width="10" height="7" rx="2" fill="#252525" stroke="#3a3a3a" stroke-width="1"/>
-            <rect x="68" y="47" width="10" height="7" rx="2" fill="#252525" stroke="#3a3a3a" stroke-width="1"/>
-            <circle cx="54" cy="43" r="2.5" fill="#d32f2f" opacity="0.7"/>
-          </svg>
-          <h3>TAZER® Bolt 2</h3>
-          <p class="product-tagline">Discreet Non-Weapon Form Factor</p>
-          <ul class="product-specs">
-            <li>15-foot probe reach — maintain safe distance</li>
-            <li>30-second neuromuscular incapacitation (NMI)</li>
-            <li>Discreet design: no gun silhouette, everyday carry</li>
-            <li>Built-in laser aiming &amp; LED flashlight</li>
-            <li>Two CR123 replaceable batteries</li>
-            <li>Safe Escape Replacement Guarantee included</li>
-            <li>Dimensions: 6.5"L × 2.4"H × 1.6"W, 8.4 oz</li>
-          </ul>
-          <div class="product-price"><sup>$</sup>449<sup>.99</sup><span>MSRP — includes cartridges &amp; batteries</span></div>
-          <a href="contact.html" class="product-cta">Inquire to Purchase →</a>
+        <!-- TASER PULSE 2 -->
+        <div class="product-card">
+          <div class="card-header">
+            <div class="card-header-left">
+              <span class="card-auth-badge">Authorized Device · Consumer Series</span>
+              <h3 class="card-title">TASER Pulse® 2</h3>
+            </div>
+            <span class="card-range-badge">15-FT Range</span>
+          </div>
+          <div class="card-device-area">
+            <svg class="card-device-icon" viewBox="0 0 64 64" fill="none">
+              <path d="M5 22 L45 22 L52 30 L52 44 L45 44 L5 44 Z" fill="#0e1730" stroke="#FFCC00" stroke-width="1.8"/>
+              <path d="M5 44 L5 56 L18 56 L18 44" fill="#0e1730" stroke="#FFCC00" stroke-width="1.8"/>
+              <circle cx="30" cy="33" r="4.5" fill="#050d1a" stroke="#FFCC00" stroke-width="1.5"/>
+              <circle cx="30" cy="33" r="1.8" fill="#FFCC00" opacity="0.8"/>
+              <rect x="50" y="24" width="9" height="5" rx="1.5" fill="#1a2540" stroke="#FFCC00" stroke-width="1"/>
+              <rect x="50" y="38" width="9" height="5" rx="1.5" fill="#1a2540" stroke="#FFCC00" stroke-width="1"/>
+            </svg>
+            <div class="card-device-tagline">
+              <strong>Concealed Carry · Commuters</strong>
+              Compact gun-profile design, laser targeting, carry-ready.
+            </div>
+          </div>
+          <div class="card-body">
+            <div class="in-stock-row"><div class="in-stock-dot"></div>In Stock Locally — Ferndale</div>
+            <p class="card-desc">
+              Sub-compact design optimized for concealed carry and daily commuters. Traditional firearm profile with built-in laser-assisted targeting — instinctive in your hand the moment you pick it up.
+            </p>
+            <ul class="card-specs">
+              <li>15-foot probe reach — maximum safe standoff distance</li>
+              <li>30-second neuromuscular incapacitation (NMI) cycle</li>
+              <li>Precision laser targeting system built in</li>
+              <li>Concealable at 8 oz, 5.25"L × 4.75"H × 1.25"W</li>
+              <li>Safe Escape Replacement Guarantee eligible</li>
+            </ul>
+          </div>
+          <div class="card-footer">
+            <div class="card-price-block">
+              <div class="card-price-label">In Stock Locally</div>
+              <div class="card-price">$399.99</div>
+            </div>
+            <a href="contact.html" class="card-cta">Verify In-Store Availability</a>
+          </div>
         </div>
 
-        <!-- PULSE 2 -->
-        <div class="taser-product-card">
-          <span class="product-category-badge badge-consumer">Consumer Series</span>
-          <svg class="product-device-icon" viewBox="0 0 86 86" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M7 30 L56 30 L64 40 L64 54 L56 54 L7 54 Z" fill="#1a1a1a" stroke="#d32f2f" stroke-width="2"/>
-            <path d="M7 54 L7 68 L23 68 L23 54" fill="#1a1a1a" stroke="#d32f2f" stroke-width="2"/>
-            <circle cx="37" cy="42" r="5" fill="#111" stroke="#f1c40f" stroke-width="1.5"/>
-            <rect x="62" y="32" width="10" height="6" rx="1.5" fill="#252525" stroke="#3a3a3a" stroke-width="1"/>
-            <rect x="62" y="47" width="10" height="6" rx="1.5" fill="#252525" stroke="#3a3a3a" stroke-width="1"/>
-            <path d="M15 37 L19 42 L15 47" stroke="#f1c40f" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-            <circle cx="37" cy="42" r="2" fill="#d32f2f" opacity="0.8"/>
-          </svg>
-          <h3>TAZER® Pulse 2</h3>
-          <p class="product-tagline">Compact &amp; Concealable With Laser Targeting</p>
-          <ul class="product-specs">
-            <li>15-foot extended range — maximum safe distance</li>
-            <li>30-second NMI cycle for safe escape</li>
-            <li>Integrated precision laser targeting system</li>
-            <li>Traditional compact gun design — instinctive handling</li>
-            <li>Concealable at just 8 oz, carry-friendly</li>
-            <li>Safe Escape Replacement Guarantee included</li>
-            <li>Dimensions: 5.25"L × 4.75"H × 1.25"W</li>
-          </ul>
-          <div class="product-price"><sup>$</sup>399<sup>.99</sup><span>MSRP — includes cartridges &amp; batteries</span></div>
-          <a href="contact.html" class="product-cta">Inquire to Purchase →</a>
+        <!-- TASER BOLT 2 -->
+        <div class="product-card">
+          <div class="card-header">
+            <div class="card-header-left">
+              <span class="card-auth-badge">Authorized Device · Consumer Series</span>
+              <h3 class="card-title">TASER Bolt® 2</h3>
+            </div>
+            <span class="card-range-badge">15-FT Range</span>
+          </div>
+          <div class="card-device-area">
+            <svg class="card-device-icon" viewBox="0 0 64 64" fill="none">
+              <rect x="6" y="22" width="48" height="22" rx="6" fill="#0e1730" stroke="#FFCC00" stroke-width="1.8"/>
+              <rect x="13" y="29" width="8" height="10" rx="2" fill="#1a2540"/>
+              <circle cx="42" cy="33" r="4.5" fill="#050d1a" stroke="#FFCC00" stroke-width="1.5"/>
+              <circle cx="42" cy="33" r="1.8" fill="#FFCC00" opacity="0.8"/>
+              <path d="M30 29 L34 33 L30 37" stroke="#FFCC00" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              <rect x="53" y="24" width="7" height="5" rx="1" fill="#1a2540" stroke="#FFCC00" stroke-width="1"/>
+              <rect x="53" y="35" width="7" height="5" rx="1" fill="#1a2540" stroke="#FFCC00" stroke-width="1"/>
+            </svg>
+            <div class="card-device-tagline">
+              <strong>Home Defense · Bedside Storage</strong>
+              Discreet flashlight form-factor, no weapon silhouette.
+            </div>
+          </div>
+          <div class="card-body">
+            <div class="in-stock-row"><div class="in-stock-dot"></div>In Stock Locally — Ferndale</div>
+            <p class="card-desc">
+              Discreet non-weapon form factor with enhanced tracking illumination. Designed for home defense and bedside storage — looks nothing like a weapon, but packs the same 15-foot reach and 30-second NMI as the full TASER Pulse® energy weapon.
+            </p>
+            <ul class="card-specs">
+              <li>15-foot probe reach, same NMI as Pulse series</li>
+              <li>30-second neuromuscular incapacitation cycle</li>
+              <li>Non-gun silhouette — discreet and socially neutral</li>
+              <li>Built-in LED flashlight with laser aiming aid</li>
+              <li>Safe Escape Replacement Guarantee eligible</li>
+            </ul>
+          </div>
+          <div class="card-footer">
+            <div class="card-price-block">
+              <div class="card-price-label">In Stock Locally</div>
+              <div class="card-price">$449.99</div>
+            </div>
+            <a href="contact.html" class="card-cta">Verify In-Store Availability</a>
+          </div>
         </div>
 
-        <!-- STRIKELIGHT 2 -->
-        <div class="taser-product-card">
-          <span class="product-category-badge badge-consumer">Consumer Series</span>
-          <svg class="product-device-icon" viewBox="0 0 86 86" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <rect x="30" y="8" width="26" height="60" rx="13" fill="#1a1a1a" stroke="#d32f2f" stroke-width="2"/>
-            <rect x="34" y="11" width="18" height="5" rx="2.5" fill="#2a2a2a"/>
-            <circle cx="43" cy="70" r="8" fill="#111" stroke="#f1c40f" stroke-width="2"/>
-            <path d="M38.5 67 L43 71.5 L47.5 67" stroke="#f1c40f" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-            <circle cx="43" cy="20" r="4" fill="#f1c40f" opacity="0.85"/>
-            <circle cx="43" cy="20" r="7" fill="none" stroke="#f1c40f" stroke-width="1" opacity="0.3"/>
-            <line x1="34" y1="34" x2="52" y2="34" stroke="#333" stroke-width="1.5"/>
-            <line x1="34" y1="42" x2="52" y2="42" stroke="#333" stroke-width="1"/>
-          </svg>
-          <h3>TAZER® StrikeLight 2</h3>
-          <p class="product-tagline">Stun Flashlight — Two Tools, One Device</p>
-          <ul class="product-specs">
-            <li>700-lumen high-output rechargeable flashlight</li>
-            <li>Three modes: high beam, low beam, red mode</li>
-            <li>20kV / 10µC contact stun capability</li>
-            <li>Charges via USB-C in approximately 2 hours</li>
-            <li>No cartridge or probe — contact stun only</li>
-            <li>Ideal for daily carry, home, vehicles, nighttime</li>
-          </ul>
-          <div class="product-price"><sup>$</sup>169<sup>.99</sup><span>MSRP — includes charging cable</span></div>
-          <a href="contact.html" class="product-cta">Inquire to Purchase →</a>
-        </div>
-
-        <!-- X1 PROFESSIONAL -->
-        <div class="taser-product-card pro-card">
-          <span class="product-category-badge badge-professional">Professional Series</span>
-          <svg class="product-device-icon" viewBox="0 0 86 86" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M7 28 L58 28 L66 38 L66 55 L58 55 L7 55 Z" fill="#0d0d00" stroke="#f1c40f" stroke-width="2"/>
-            <path d="M7 55 L7 70 L25 70 L25 55" fill="#0d0d00" stroke="#f1c40f" stroke-width="2"/>
-            <circle cx="40" cy="41" r="5.5" fill="#050500" stroke="#f1c40f" stroke-width="1.5"/>
-            <circle cx="40" cy="41" r="2" fill="#f1c40f" opacity="0.7"/>
-            <rect x="63" y="30" width="11" height="7" rx="2" fill="#1a1a00" stroke="#f1c40f" stroke-width="1"/>
-            <rect x="63" y="48" width="11" height="7" rx="2" fill="#1a1a00" stroke="#f1c40f" stroke-width="1"/>
-            <text x="15" y="46" font-size="10" fill="#f1c40f" font-family="monospace" font-weight="bold" letter-spacing="0.5">X1</text>
-          </svg>
-          <h3>TAZER® X1</h3>
-          <p class="product-tagline">Professional Series — Single Shot, 15 ft</p>
-          <ul class="product-specs">
-            <li>15-foot range with contact stun backup capability</li>
-            <li>5-second NMI — overrides central nervous system</li>
-            <li>Built-in LED flashlight &amp; laser for precision aim</li>
-            <li>Ideal for security professionals, small businesses</li>
-            <li>Single-shot with contact stun as close-range backup</li>
-            <li>Professional-grade build quality and reliability</li>
-          </ul>
-          <div class="product-price pro-price">Professional Pricing<span>Contact us for a quote</span></div>
-          <a href="tel:2487984366" class="product-cta pro-cta">Call (248) 798-4366 →</a>
-        </div>
-
-        <!-- 7CQ PROFESSIONAL -->
-        <div class="taser-product-card pro-card">
-          <span class="product-category-badge badge-professional">Professional Series</span>
-          <svg class="product-device-icon" viewBox="0 0 86 86" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M7 26 L58 26 L66 36 L66 56 L58 56 L7 56 Z" fill="#0d0d00" stroke="#f1c40f" stroke-width="2"/>
-            <path d="M7 56 L7 72 L25 72 L25 56" fill="#0d0d00" stroke="#f1c40f" stroke-width="2"/>
-            <circle cx="39" cy="41" r="5" fill="#050500" stroke="#f1c40f" stroke-width="1.5"/>
-            <circle cx="39" cy="41" r="2" fill="#f1c40f" opacity="0.7"/>
-            <rect x="63" y="28" width="11" height="6" rx="2" fill="#1a1a00" stroke="#f1c40f" stroke-width="1"/>
-            <rect x="63" y="38" width="11" height="6" rx="2" fill="#1a1a00" stroke="#f1c40f" stroke-width="1"/>
-            <rect x="63" y="48" width="11" height="6" rx="2" fill="#1a1a00" stroke="#f1c40f" stroke-width="1"/>
-            <text x="13" y="45" font-size="9" fill="#f1c40f" font-family="monospace" font-weight="bold" letter-spacing="0.5">7CQ</text>
-          </svg>
-          <h3>TAZER® 7CQ</h3>
-          <p class="product-tagline">Professional Series — Two Shot, 12 ft</p>
-          <ul class="product-specs">
-            <li>12-foot close-quarters optimized reach</li>
-            <li>Two-shot deployment — two attempts per charge</li>
-            <li>5-second NMI + contact stun for zero-distance</li>
-            <li>Effective from 0 to 12 feet — built for real scenarios</li>
-            <li>Ideal for home defense, ride-share, delivery drivers</li>
-            <li>Professional reliability with close-quarters engineering</li>
-          </ul>
-          <div class="product-price pro-price">Professional Pricing<span>Contact us for a quote</span></div>
-          <a href="tel:2487984366" class="product-cta pro-cta">Call (248) 798-4366 →</a>
+        <!-- TASER STRIKELIGHT 2 -->
+        <div class="product-card">
+          <div class="card-header">
+            <div class="card-header-left">
+              <span class="card-auth-badge">Authorized Device · Consumer Series</span>
+              <h3 class="card-title">TASER StrikeLight® 2</h3>
+            </div>
+            <span class="card-range-badge">Contact Stun</span>
+          </div>
+          <div class="card-device-area">
+            <svg class="card-device-icon" viewBox="0 0 64 64" fill="none">
+              <rect x="22" y="6" width="20" height="46" rx="10" fill="#0e1730" stroke="#FFCC00" stroke-width="1.8"/>
+              <rect x="26" y="9" width="12" height="4" rx="2" fill="#1a2540"/>
+              <circle cx="32" cy="54" r="6" fill="#050d1a" stroke="#FFCC00" stroke-width="1.8"/>
+              <path d="M28.5 51.5 L32 55 L35.5 51.5" stroke="#FFCC00" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              <circle cx="32" cy="16" r="3.5" fill="#FFCC00" opacity="0.9"/>
+              <circle cx="32" cy="16" r="6" fill="none" stroke="#FFCC00" stroke-width="0.8" opacity="0.3"/>
+              <line x1="26" y1="28" x2="38" y2="28" stroke="#1a2540" stroke-width="1.5"/>
+              <line x1="26" y1="35" x2="38" y2="35" stroke="#1a2540" stroke-width="1"/>
+            </svg>
+            <div class="card-device-tagline">
+              <strong>Dog Walkers · Late-Night Workers</strong>
+              Stun flashlight — utility and protection in one.
+            </div>
+          </div>
+          <div class="card-body">
+            <div class="in-stock-row"><div class="in-stock-dot"></div>In Stock Locally — Ferndale</div>
+            <p class="card-desc">
+              Combination stun flashlight and physical strike face — two tools in one grip. The everyday carry option for dog walkers, night-shift workers, and anyone who wants protection that doesn't look like protection.
+            </p>
+            <ul class="card-specs">
+              <li>700-lumen high-output rechargeable LED flashlight</li>
+              <li>Three modes: high beam, low beam, red mode</li>
+              <li>20kV / 10µC contact stun capability</li>
+              <li>Charges via USB-C in approx. 2 hours</li>
+              <li>Reinforced strike face for physical deterrence</li>
+            </ul>
+          </div>
+          <div class="card-footer">
+            <div class="card-price-block">
+              <div class="card-price-label">In Stock Locally</div>
+              <div class="card-price">$169.99</div>
+            </div>
+            <a href="contact.html" class="card-cta">Verify In-Store Availability</a>
+          </div>
         </div>
 
       </div>
     </section>
 
-    <!-- COMPARISON TABLE -->
-    <section class="taser-compare-section">
-      <h2 class="section-title">SIDE-BY-SIDE COMPARISON</h2>
-      <p class="section-subtitle">Pick the Right Device for Your Situation</p>
-      <div class="compare-scroll">
-        <table class="compare-table">
-          <thead>
-            <tr>
-              <th>Device</th>
-              <th>Series</th>
-              <th>Type</th>
-              <th>Range</th>
-              <th>Shots</th>
-              <th>NMI Duration</th>
-              <th>Flashlight</th>
-              <th>Laser</th>
-              <th>MSRP</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td class="model-name">TAZER® Bolt 2</td>
-              <td>Consumer</td>
-              <td>Probe-firing</td>
-              <td>15 ft</td>
-              <td>1</td>
-              <td>30 sec</td>
-              <td class="check">✓</td>
-              <td class="check">✓</td>
-              <td class="price-cell">$449.99</td>
-            </tr>
-            <tr>
-              <td class="model-name">TAZER® Pulse 2</td>
-              <td>Consumer</td>
-              <td>Probe-firing</td>
-              <td>15 ft</td>
-              <td>1</td>
-              <td>30 sec</td>
-              <td class="check">✓</td>
-              <td class="check">✓</td>
-              <td class="price-cell">$399.99</td>
-            </tr>
-            <tr>
-              <td class="model-name">TAZER® StrikeLight 2</td>
-              <td>Consumer</td>
-              <td>Contact stun</td>
-              <td>Contact</td>
-              <td>—</td>
-              <td>Contact</td>
-              <td class="check">✓ 700 lm</td>
-              <td>—</td>
-              <td class="price-cell">$169.99</td>
-            </tr>
-            <tr>
-              <td class="model-name">TAZER® X1</td>
-              <td class="pro-label">Professional</td>
-              <td>Probe + contact</td>
-              <td>15 ft</td>
-              <td>1</td>
-              <td>5 sec</td>
-              <td class="check">✓</td>
-              <td class="check">✓</td>
-              <td class="price-cell">Call us</td>
-            </tr>
-            <tr>
-              <td class="model-name">TAZER® 7CQ</td>
-              <td class="pro-label">Professional</td>
-              <td>Probe + contact</td>
-              <td>12 ft</td>
-              <td>2</td>
-              <td>5 sec</td>
-              <td>—</td>
-              <td>—</td>
-              <td class="price-cell">Call us</td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-    </section>
+    <!-- ============================================================
+         TRUST & LOCKSMITH INTEGRATION VALUE PROP
+         ============================================================ -->
+    <section class="taser-section navy-bg">
+      <span class="taser-section-label">Why Buy Local From a Licensed Locksmith</span>
+      <h2 class="taser-section-title">More Than a Purchase — It's a Consultation.</h2>
+      <p class="taser-section-sub">Don't just buy online and figure it out. Get hands-on orientation from the security professionals who understand both your physical and personal protection layers.</p>
 
-    <!-- WHY BUY AUTHORIZED -->
-    <section class="taser-why-section">
-      <h2 class="section-title">WHY BUY FROM AN AUTHORIZED DEALER?</h2>
-      <p class="section-subtitle">Not All TAZER® Listings Are Equal</p>
-      <div class="taser-why-grid">
-        <div class="taser-why-item">
-          <h4>100% Genuine Products</h4>
-          <p>Every device is sourced directly through authorized Axon distribution. No gray market inventory, no refurbs sold as new, no counterfeits.</p>
+      <div class="value-grid">
+        <div class="value-card">
+          <span class="value-card-icon">🛡️</span>
+          <h4>Professional Guidance</h4>
+          <p>Get hands-on orientation from certified locksmith professionals on safe storage, holstering, and device activation — not a YouTube tutorial and a shipping box.</p>
         </div>
-        <div class="taser-why-item">
-          <h4>Full Manufacturer Warranty</h4>
-          <p>Genuine TAZER® devices bought through authorized dealers carry the full Axon manufacturer warranty — real protection from day one.</p>
+        <div class="value-card">
+          <span class="value-card-icon">⚖️</span>
+          <h4>Local State Compliance</h4>
+          <p>EZ Locksmith verifies Michigan-specific restrictions and compliance laws at the point of sale. You leave fully informed, legally covered, and ready to carry.</p>
         </div>
-        <div class="taser-why-item">
-          <h4>Safe Escape Guarantee</h4>
-          <p>TAZER's Safe Escape Replacement Program replaces your device if deployed in self-defense. Only honored when purchased through an authorized dealer.</p>
+        <div class="value-card">
+          <span class="value-card-icon">⚡</span>
+          <h4>Immediate Availability</h4>
+          <p>Skip the shipping wait. Walk into our Ferndale location, handle the training models, ask your questions, and leave protected today.</p>
         </div>
-        <div class="taser-why-item">
-          <h4>Expert Local Guidance</h4>
-          <p>Our team helps you choose the right device for your lifestyle, environment, and Michigan legal requirements — not just the highest-margin item.</p>
+        <div class="value-card">
+          <span class="value-card-icon">✅</span>
+          <h4>100% Genuine Devices</h4>
+          <p>As an official Axon authorized reseller, every TASER® energy weapon we sell comes with full manufacturer warranty and Safe Escape Replacement Guarantee — zero gray market risk.</p>
         </div>
-        <div class="taser-why-item">
-          <h4>Michigan Compliance Knowledge</h4>
-          <p>We know Michigan law on personal protection devices inside and out. Walk out fully informed, legally compliant, and properly trained on your device.</p>
+        <div class="value-card">
+          <span class="value-card-icon">🏠</span>
+          <h4>Complete Security Ecosystem</h4>
+          <p>Pair your TASER® energy weapon with the same trusted team that installs your deadbolts, smart locks, and access control systems. One provider, total security.</p>
         </div>
-        <div class="taser-why-item">
-          <h4>Local, Accountable Business</h4>
-          <p>We're licensed, bonded, and insured at a physical Ferndale location. If something's wrong, you walk through our door — not into a support ticket queue.</p>
+        <div class="value-card">
+          <span class="value-card-icon">📍</span>
+          <h4>Walk-In Accountability</h4>
+          <p>We're licensed, bonded, and insured at a real Ferndale address. If you ever have an issue, you walk through our door — not into an online support queue.</p>
         </div>
       </div>
     </section>
 
-    <!-- CTA BAND -->
+    <!-- ============================================================
+         FAQ
+         ============================================================ -->
+    <section class="taser-section charcoal-bg">
+      <span class="taser-section-label">Compliance &amp; Selection Guide</span>
+      <h2 class="taser-section-title">Frequently Asked Questions</h2>
+      <p class="taser-section-sub">Common questions from Michigan residents before purchasing a TASER® energy weapon.</p>
+
+      <div class="faq-list">
+
+        <div class="faq-item open">
+          <button class="faq-question" aria-expanded="true">
+            Do I need a special permit to carry a TASER® energy weapon in Michigan?
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <div class="faq-answer-inner">
+              In Michigan, civilians are legally allowed to purchase, possess, and carry a TASER® energy weapon for self-defense, provided they are over 18, can pass a basic background check at purchase, or hold a valid Concealed Pistol License (CPL). Our team will walk you through every verification step in-store before you leave — no guesswork, no legal exposure.
+            </div>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            What is the difference between a TASER® energy weapon and a generic stun gun?
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <div class="faq-answer-inner">
+              A generic stun gun requires direct physical contact with the attacker to be effective — meaning you're already dangerously close. A genuine TASER® energy weapon fires dual probes up to 15 feet away, delivering Neuro-Muscular Incapacitation (NMI) that completely overrides an attacker's muscle function from a safe distance. The difference isn't minor — it's the difference between a last resort and a real defensive strategy.
+            </div>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            Which TASER® energy weapon is right for me?
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <div class="faq-answer-inner">
+              It depends on how and where you carry. The TASER Pulse® 2 energy weapon is ideal for concealed carry and daily commuters who want a familiar firearm profile. The TASER Bolt® 2 energy weapon is designed for home defense and discreet carry — same 15-foot range, but in a form factor that raises no social red flags. The TASER StrikeLight® 2 device is the everyday carry solution — a 700-lumen flashlight with a contact stun built in. Stop in and our team will help you decide in person.
+            </div>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            What is the Safe Escape Replacement Guarantee?
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <div class="faq-answer-inner">
+              Axon's Safe Escape Replacement Program replaces your TASER® energy weapon if you discharge it in a legitimate act of self-defense and need to leave it behind to escape. This guarantee is only valid for devices purchased through authorized resellers like EZ Locksmith — it does not apply to devices purchased from unauthorized third-party sellers on marketplace platforms.
+            </div>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            Can I carry a TASER® energy weapon at work in Michigan?
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <div class="faq-answer-inner">
+              Michigan state law generally permits carry for eligible adults, but individual employers and property owners may restrict it on their premises. Certain locations — schools, courthouses, and federal properties — prohibit all weapons. Our team can walk you through the specific restrictions for your situation and profession at the time of purchase.
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ============================================================
+         CTA BAND
+         ============================================================ -->
     <section class="taser-cta-band">
-      <h2>READY TO GET PROTECTED?</h2>
-      <p>Stop into our Ferndale location or give us a call. We'll walk you through every device in the lineup, answer your questions, and find the right fit — no pressure, no upsell.</p>
+      <h2>Ready to Get Protected Today?</h2>
+      <p>Stop into our Ferndale location or give us a call. Handle every device in person, get Michigan compliance guidance, and leave protected — no shipping wait, no online guesswork.</p>
       <div class="cta-buttons">
-        <a href="tel:2487984366" class="btn-call" style="padding: 18px 42px; font-family: var(--mono-font); font-size: 0.95rem; text-transform: uppercase; letter-spacing: 1px;">
-          CALL (248) 798-4366
-        </a>
-        <a href="contact.html" class="btn-outline-gold">SEND A MESSAGE →</a>
+        <a href="tel:2487984366" class="btn-axon-yellow">Call (248) 798-4366</a>
+        <a href="contact.html" class="btn-axon-outline">Send a Message →</a>
       </div>
-      <p style="margin: 32px auto 0; font-family: var(--mono-font); font-size: 0.78rem; color: #444; position: relative;">
+      <p style="margin: 32px auto 0; font-family: 'Inter', sans-serif; font-size: 0.78rem; color: #2a3550; position: relative;">
         📍 2877 Hilton Rd, Ferndale, MI 48220 &nbsp;|&nbsp; Mon–Sat 9AM–6PM
       </p>
     </section>
 
-    <!-- TRADEMARK NOTICE -->
+    <!-- ============================================================
+         MANDATORY TRADEMARK NOTICE (Axon requirement)
+         ============================================================ -->
     <div class="trademark-notice">
       <p>
         TASER® is a trademark of Axon Enterprise, Inc., registered in the U.S. and other countries.
-        EZ Locksmith, LLC is an authorized dealer of genuine TASER® brand products manufactured by Axon Enterprise, Inc.
-        All product names, trademarks, and specifications referenced on this page are the intellectual property of Axon Enterprise, Inc.
+        For more information about Axon's trademarks, visit <a href="https://www.axon.com/trademarks" target="_blank" rel="noopener">www.axon.com/trademarks</a>.
+        EZ Locksmith, LLC is an independent authorized reseller of genuine TASER® products.
+        All product names and specifications are the intellectual property of Axon Enterprise, Inc.
         Prices shown are manufacturer's suggested retail prices and are subject to change without notice.
-        TASER® is used as an adjective to describe genuine TASER® brand devices only and does not imply endorsement, sponsorship, or affiliation beyond the authorized dealer relationship.
       </p>
     </div>
 
@@ -870,5 +1076,16 @@
     </div>
 
     <script src="script.js"></script>
+    <script>
+      /* FAQ accordion */
+      document.querySelectorAll('.faq-question').forEach(btn => {
+        btn.addEventListener('click', () => {
+          const item = btn.closest('.faq-item');
+          const isOpen = item.classList.contains('open');
+          document.querySelectorAll('.faq-item').forEach(el => el.classList.remove('open'));
+          if (!isOpen) item.classList.add('open');
+        });
+      });
+    </script>
   </body>
 </html>
