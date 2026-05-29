@@ -536,6 +536,13 @@
         object-fit: contain;
       }
 
+      /* Photo area — video element sizing */
+      .card-photo-area video {
+        width: 100%;
+        max-height: 190px;
+        border-radius: 4px;
+      }
+
       /* Pro Series grid — max 2 up, centered */
       .pro-grid {
         max-width: 860px;
@@ -976,12 +983,8 @@
             </div>
             <span class="card-range-badge">15-FT Range</span>
           </div>
-          <div class="card-device-area" style="flex-direction: column; align-items: flex-start;">
-            <img src="taser/pulse2-white.svg" alt="TASER Pulse 2" class="card-product-wordmark">
-            <div class="card-device-tagline">
-              <strong>Concealed Carry · Everyday Preparedness</strong>
-              The best compact solution for less lethal self-defense.
-            </div>
+          <div class="card-photo-area">
+            <video src="taser/pulse2-demo.mp4" controls preload="none" aria-label="TASER Pulse 2 demo video"></video>
           </div>
           <div class="card-body">
             <div class="in-stock-row"><div class="in-stock-dot"></div>In Stock Locally — Ferndale</div>
@@ -1016,12 +1019,8 @@
             </div>
             <span class="card-range-badge">15-FT Range</span>
           </div>
-          <div class="card-device-area" style="flex-direction: column; align-items: flex-start;">
-            <img src="taser/bolt2-white.svg" alt="TASER Bolt 2" class="card-product-wordmark">
-            <div class="card-device-tagline">
-              <strong>Home Defense · Everyday Carry</strong>
-              Less-lethal protection with 15-foot stopping power.
-            </div>
+          <div class="card-photo-area">
+            <img src="taser/bolt2-photo-side.jpg" alt="TASER Bolt 2 energy weapon" loading="lazy" decoding="async">
           </div>
           <div class="card-body">
             <div class="in-stock-row"><div class="in-stock-dot"></div>In Stock Locally — Ferndale</div>
@@ -1056,12 +1055,8 @@
             </div>
             <span class="card-range-badge">Contact Stun</span>
           </div>
-          <div class="card-device-area" style="flex-direction: column; align-items: flex-start;">
-            <img src="taser/strikelight2-white.svg" alt="TASER StrikeLight 2" class="card-product-wordmark">
-            <div class="card-device-tagline">
-              <strong>Dog Walkers · Night-Shift Workers</strong>
-              The most powerful stun device legally available.
-            </div>
+          <div class="card-photo-area">
+            <video src="taser/strikelight2-demo.mp4" controls preload="none" aria-label="TASER StrikeLight 2 demo video"></video>
           </div>
           <div class="card-body">
             <div class="in-stock-row"><div class="in-stock-dot"></div>In Stock Locally — Ferndale</div>
