@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Authorized TASER® Energy Weapons — Detroit Metro | EZ Locksmith</title>
-    <meta name="description" content="EZ Locksmith is an official Axon authorized reseller of genuine TASER® energy weapons in the Detroit metro area. Shop TASER Pulse, Bolt 2, and StrikeLight devices locally in Ferndale, MI." />
+    <meta name="description" content="Official Axon authorized TASER® reseller in Ferndale, MI. Buy Pulse 2, Bolt 2, StrikeLight 2, X1 &amp; 7 CQ energy weapons locally — handle before you buy. Serving Metro Detroit." />
     <meta name="robots" content="index, follow" />
     <link rel="canonical" href="https://ezlocksmithdetroit.com/taser.html" />
     <meta property="og:title" content="Authorized TASER® Energy Weapons — Detroit Metro | EZ Locksmith" />
@@ -12,15 +12,22 @@
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://ezlocksmithdetroit.com/taser.html" />
     <meta name="twitter:card" content="summary_large_image" />
+    <meta property="og:image" content="https://ezlocksmithdetroit.com/taser/dealer-badge.png" />
+    <meta property="og:image:width" content="500" />
+    <meta property="og:image:height" content="500" />
+    <meta name="twitter:image" content="https://ezlocksmithdetroit.com/taser/dealer-badge.png" />
+    <meta name="twitter:title" content="Authorized TASER® Energy Weapons — Detroit Metro | EZ Locksmith" />
+    <meta name="twitter:description" content="Official Axon authorized reseller in Ferndale, MI. All 5 TASER® models in stock — Pulse 2, Bolt 2, StrikeLight 2, X1 &amp; 7 CQ. Handle before you buy." />
 
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
-      "@type": "Store",
+      "@type": ["Store", "LocalBusiness"],
       "name": "EZ Locksmith — Axon Authorized TASER Reseller",
       "description": "Official Axon authorized reseller of genuine TASER energy weapons serving Metro Detroit.",
       "url": "https://ezlocksmithdetroit.com/taser.html",
       "telephone": "+12487984366",
+      "image": "https://ezlocksmithdetroit.com/taser/dealer-badge.png",
       "address": {
         "@type": "PostalAddress",
         "streetAddress": "2877 Hilton Rd",
@@ -28,6 +35,21 @@
         "addressRegion": "MI",
         "postalCode": "48220",
         "addressCountry": "US"
+      },
+      "openingHoursSpecification": [
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],
+          "opens": "09:00",
+          "closes": "18:00"
+        }
+      ],
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "5",
+        "reviewCount": "500",
+        "bestRating": "5",
+        "worstRating": "1"
       },
       "hasOfferCatalog": {
         "@type": "OfferCatalog",
@@ -64,6 +86,28 @@
               "description": "700-lumen rechargeable stun flashlight"
             },
             "price": "169.99",
+            "priceCurrency": "USD"
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Product",
+              "name": "TASER X1 energy weapon",
+              "brand": {"@type": "Brand", "name": "TASER"},
+              "description": "Professional series TASER energy weapon, 15-foot range, LASER targeting, 5-second NMI"
+            },
+            "price": "999.99",
+            "priceCurrency": "USD"
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Product",
+              "name": "TASER 7 CQ energy weapon",
+              "brand": {"@type": "Brand", "name": "TASER"},
+              "description": "Close-quarters professional TASER energy weapon, 12-foot range, double-shot capability"
+            },
+            "price": "1699.99",
             "priceCurrency": "USD"
           }
         ]
@@ -138,6 +182,15 @@
       }
 
       /* HERO CTA ROW */
+      .hero-price-hint {
+        font-family: 'Inter', sans-serif;
+        font-size: 0.88rem;
+        color: rgba(255,255,255,0.6);
+        margin: -12px 0 28px;
+        letter-spacing: 0.3px;
+      }
+      .hero-price-hint strong { color: #FFCC00; font-weight: 800; }
+
       .hero-cta-row {
         display: flex;
         gap: 16px;
@@ -481,6 +534,52 @@
         color: #fff;
       }
 
+      /* Product tier dividers */
+      .product-tier-label {
+        font-family: 'Inter', sans-serif;
+        font-size: 0.68rem;
+        font-weight: 700;
+        letter-spacing: 2.5px;
+        text-transform: uppercase;
+        color: #FFCC00;
+        margin: 0 0 22px;
+        padding-bottom: 14px;
+        border-bottom: 1px solid rgba(255,255,255,0.1);
+      }
+      .product-tier-label.pro-tier {
+        margin-top: 56px;
+      }
+
+      /* Photo area — Pro Series cards */
+      .card-photo-area {
+        background: #f5f6fa;
+        padding: 28px 24px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-bottom: 1px solid #e8ecf4;
+        min-height: 200px;
+      }
+      .card-photo-area img {
+        max-height: 190px;
+        width: auto;
+        max-width: 100%;
+        object-fit: contain;
+      }
+
+      /* Photo area — video element sizing */
+      .card-photo-area video {
+        width: 100%;
+        max-height: 190px;
+        border-radius: 4px;
+      }
+
+      /* Pro Series grid — max 2 up, centered */
+      .pro-grid {
+        max-width: 860px;
+        margin: 0 auto;
+      }
+
       /* IN-STOCK INDICATOR */
       .in-stock-row {
         display: flex;
@@ -661,6 +760,79 @@
       .trademark-notice a:hover { color: #FFCC00; }
 
       /* ============================================
+         PRODUCT COMPARISON TABLE
+         ============================================ */
+      .compare-scroll {
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+        border-radius: 12px;
+        box-shadow: 0 4px 24px rgba(0,0,0,0.25);
+      }
+      .compare-table {
+        width: 100%;
+        min-width: 620px;
+        border-collapse: collapse;
+        font-family: 'Inter', sans-serif;
+        font-size: 0.83rem;
+      }
+      .compare-table thead th {
+        background: #FFCC00;
+        color: #0B132B;
+        font-weight: 700;
+        padding: 14px 12px;
+        text-align: center;
+        font-size: 0.78rem;
+        letter-spacing: 0.3px;
+        border: 1px solid rgba(0,0,0,0.1);
+      }
+      .compare-table thead th .compare-price {
+        display: block;
+        font-size: 1.05rem;
+        font-weight: 900;
+        margin-top: 3px;
+        letter-spacing: -0.3px;
+      }
+      .compare-table thead th:first-child { background: #0B132B; }
+      .compare-feature-col {
+        text-align: left !important;
+        font-weight: 600;
+        color: #c0cadf;
+        background: #0B132B;
+        padding: 12px 18px !important;
+        white-space: nowrap;
+        border-right: 2px solid #FFCC00;
+        font-size: 0.78rem;
+        text-transform: uppercase;
+        letter-spacing: 0.8px;
+      }
+      .compare-table td {
+        text-align: center;
+        padding: 12px 10px;
+        border: 1px solid rgba(255,255,255,0.05);
+        color: #c0cadf;
+        background: #0e1730;
+        vertical-align: middle;
+      }
+      .compare-table tr:nth-child(even) td { background: #111b30; }
+      .compare-table tr:nth-child(even) .compare-feature-col { background: #0a1020; }
+      .compare-table tr.compare-best-for td {
+        font-size: 0.74rem;
+        color: #7a8aaa;
+        font-style: italic;
+        line-height: 1.4;
+      }
+      .c-yes { color: #2ecc71; font-weight: 700; font-size: 1rem; }
+      .c-no { color: #3a4460; font-size: 1rem; }
+      .compare-note {
+        text-align: center;
+        font-family: 'Inter', sans-serif;
+        font-size: 0.78rem;
+        color: #7a8aaa;
+        margin-top: 16px;
+      }
+      .compare-note a { color: #FFCC00; text-decoration: underline; }
+
+      /* ============================================
          MOBILE — NO HORIZONTAL SCROLL
          ============================================ */
 
@@ -740,6 +912,11 @@
           text-align: center;
           padding: 14px 16px;
         }
+
+        /* Pro grid — single col on mobile */
+        .pro-grid { max-width: 100%; }
+        .card-photo-area { min-height: 160px; padding: 20px 16px; }
+        .card-photo-area img { max-height: 150px; }
 
         /* Value grid */
         .value-grid { grid-template-columns: 1fr; }
@@ -866,9 +1043,10 @@
         Secure your home, business, and family with genuine TASER® civilian energy weapons.
         Provided locally by EZ Locksmith — your trusted physical and personal security experts in Metro Detroit.
       </p>
+      <p class="hero-price-hint">All 5 models in stock locally &nbsp;·&nbsp; Starting at <strong>$169.99</strong></p>
       <div class="hero-cta-row">
-        <a href="#products" class="btn-axon-yellow">Explore Device Models</a>
-        <a href="contact.html" class="btn-axon-outline">Speak with a Security Advisor</a>
+        <a href="#products" class="btn-axon-yellow">See In-Stock Devices</a>
+        <a href="tel:2487984366" class="btn-axon-outline">Call to Buy Today</a>
       </div>
       <img src="taser/logo-energy.png" alt="TASER" class="hero-taser-logo">
     </section>
@@ -879,7 +1057,7 @@
     <section class="taser-trust-band">
       <div class="taser-trust-inner">
         <div class="trust-bolt">
-          <img src="taser/logo-civilian.png" alt="TASER from Axon" class="trust-logo-img">
+          <img src="taser/logo-energy.png" alt="TASER from Axon" class="trust-logo-img">
         </div>
         <div>
           <h3>Official Axon Authorized Reseller — Metro Detroit</h3>
@@ -898,6 +1076,7 @@
       <h2 class="taser-section-title">TASER® Devices In Stock Locally</h2>
       <p class="taser-section-sub">Handle before you buy. Every model below is available at our Ferndale location with hands-on guidance from licensed security professionals.</p>
 
+      <div class="product-tier-label">Consumer Series</div>
       <div class="products-grid">
 
         <!-- TASER PULSE 2 -->
@@ -909,24 +1088,22 @@
             </div>
             <span class="card-range-badge">15-FT Range</span>
           </div>
-          <div class="card-device-area" style="flex-direction: column; align-items: flex-start;">
-            <img src="taser/pulse2-white.svg" alt="TASER Pulse 2" class="card-product-wordmark">
-            <div class="card-device-tagline">
-              <strong>Concealed Carry · Commuters</strong>
-              Compact gun-profile design, laser targeting, carry-ready.
-            </div>
+          <div class="card-photo-area">
+            <video src="taser/pulse2-demo.mp4" controls preload="none" aria-label="TASER Pulse 2 demo video"></video>
           </div>
           <div class="card-body">
             <div class="in-stock-row"><div class="in-stock-dot"></div>In Stock Locally — Ferndale</div>
             <p class="card-desc">
-              Sub-compact design optimized for concealed carry and daily commuters. Traditional firearm profile with built-in laser-assisted targeting — instinctive in your hand the moment you pick it up.
+              Built on the same core TASER technology trusted by 18,000+ law enforcement agencies worldwide — brought into a civilian-ready device. Aim with laser-assisted targeting, deploy up to 15 feet, and escape with a 30-second NMI cycle designed to create a window to get to safety.
             </p>
             <ul class="card-specs">
-              <li>15-foot probe reach — maximum safe standoff distance</li>
-              <li>30-second neuromuscular incapacitation (NMI) cycle</li>
-              <li>Precision laser targeting system built in</li>
-              <li>Concealable at 8 oz, 5.25"L × 4.75"H × 1.25"W</li>
-              <li>Safe Escape Replacement Guarantee eligible</li>
+              <li>15-foot probe deployment — keep distance from a threat</li>
+              <li>30-second NMI cycle for an escape window</li>
+              <li>Laser-assisted targeting for faster alignment under stress</li>
+              <li>No recoil on trigger pull for controlled operation</li>
+              <li>Close-contact stun backup for close-range situations</li>
+              <li>8 oz · 5.25"L × 4.75"H × 1.25"W · Legal in 49 states</li>
+              <li>Safe Escape Replacement Guarantee included</li>
             </ul>
           </div>
           <div class="card-footer">
@@ -934,7 +1111,7 @@
               <div class="card-price-label">In Stock Locally</div>
               <div class="card-price">$399.99</div>
             </div>
-            <a href="contact.html" class="card-cta">Verify In-Store Availability</a>
+            <a href="contact.html" class="card-cta">Buy In-Store Today</a>
           </div>
         </div>
 
@@ -947,24 +1124,22 @@
             </div>
             <span class="card-range-badge">15-FT Range</span>
           </div>
-          <div class="card-device-area" style="flex-direction: column; align-items: flex-start;">
-            <img src="taser/bolt2-white.svg" alt="TASER Bolt 2" class="card-product-wordmark">
-            <div class="card-device-tagline">
-              <strong>Home Defense · Bedside Storage</strong>
-              Discreet flashlight form-factor, no weapon silhouette.
-            </div>
+          <div class="card-photo-area">
+            <img src="taser/bolt2-photo-side.jpg" alt="TASER Bolt 2 energy weapon" loading="lazy" decoding="async">
           </div>
           <div class="card-body">
             <div class="in-stock-row"><div class="in-stock-dot"></div>In Stock Locally — Ferndale</div>
             <p class="card-desc">
-              Discreet non-weapon form factor with enhanced tracking illumination. Designed for home defense and bedside storage — looks nothing like a weapon, but packs the same 15-foot reach and 30-second NMI as the full TASER Pulse® energy weapon.
+              Don't let the discreet look fool you — the TASER Bolt® 2 delivers 15 feet of safety distance and 30 seconds of full muscle lock-up. Sleek and compact for everyday carry, with a built-in 210-lumen LED and laser for accurate targeting even in low light.
             </p>
             <ul class="card-specs">
-              <li>15-foot probe reach, same NMI as Pulse series</li>
-              <li>30-second neuromuscular incapacitation cycle</li>
-              <li>Non-gun silhouette — discreet and socially neutral</li>
-              <li>Built-in LED flashlight with laser aiming aid</li>
-              <li>Safe Escape Replacement Guarantee eligible</li>
+              <li>15-foot probe reach — maintain distance from threats</li>
+              <li>30-second NMI cycle — full body lock-up to escape safely</li>
+              <li>210-lumen LED + laser-assisted targeting</li>
+              <li>Contact stun backup after cartridge deployment</li>
+              <li>8.4 oz · 6.5"L × 2.4"H × 1.6"W · Legal in 49 states</li>
+              <li>Includes wrist strap, 2 cartridges &amp; batteries</li>
+              <li>Safe Escape Replacement Guarantee included</li>
             </ul>
           </div>
           <div class="card-footer">
@@ -972,7 +1147,7 @@
               <div class="card-price-label">In Stock Locally</div>
               <div class="card-price">$449.99</div>
             </div>
-            <a href="contact.html" class="card-cta">Verify In-Store Availability</a>
+            <a href="contact.html" class="card-cta">Buy In-Store Today</a>
           </div>
         </div>
 
@@ -985,24 +1160,22 @@
             </div>
             <span class="card-range-badge">Contact Stun</span>
           </div>
-          <div class="card-device-area" style="flex-direction: column; align-items: flex-start;">
-            <img src="taser/strikelight2-white.svg" alt="TASER StrikeLight 2" class="card-product-wordmark">
-            <div class="card-device-tagline">
-              <strong>Dog Walkers · Late-Night Workers</strong>
-              Stun flashlight — utility and protection in one.
-            </div>
+          <div class="card-photo-area">
+            <video src="taser/strikelight2-demo.mp4" controls preload="none" aria-label="TASER StrikeLight 2 demo video"></video>
           </div>
           <div class="card-body">
             <div class="in-stock-row"><div class="in-stock-dot"></div>In Stock Locally — Ferndale</div>
             <p class="card-desc">
-              Combination stun flashlight and physical strike face — two tools in one grip. The everyday carry option for dog walkers, night-shift workers, and anyone who wants protection that doesn't look like protection.
+              A powerful contact stun device combined with a high-performance flashlight in a sleek, easy-to-carry form. Fit it in your bag, car, or on your nightstand — everyday visibility with close-range protection ready when it matters.
             </p>
             <ul class="card-specs">
-              <li>700-lumen high-output rechargeable LED flashlight</li>
-              <li>Three modes: high beam, low beam, red mode</li>
-              <li>20kV / 10µC contact stun capability</li>
-              <li>Charges via USB-C in approx. 2 hours</li>
-              <li>Reinforced strike face for physical deterrence</li>
+              <li>10 µC contact stun — 40% more than the industry benchmark</li>
+              <li>6× more powerful than the #1 selling stun gun on Amazon</li>
+              <li>Loud audible arc warning deters threats before contact</li>
+              <li>3-mode LED: 150 lumens / 700 lumens / red light</li>
+              <li>USB-C rechargeable · 10.6 oz · 7.4"L</li>
+              <li>Personal defense &amp; animal deterrence</li>
+              <li>Available in black or white · Safe Escape Guarantee included</li>
             </ul>
           </div>
           <div class="card-footer">
@@ -1010,11 +1183,183 @@
               <div class="card-price-label">In Stock Locally</div>
               <div class="card-price">$169.99</div>
             </div>
-            <a href="contact.html" class="card-cta">Verify In-Store Availability</a>
+            <a href="contact.html" class="card-cta">Buy In-Store Today</a>
           </div>
         </div>
 
+      </div><!-- /products-grid consumer -->
+
+      <!-- Professional Series -->
+      <div class="product-tier-label pro-tier">Professional Series</div>
+      <div class="products-grid pro-grid">
+
+        <!-- TASER X1 -->
+        <div class="product-card">
+          <div class="card-header">
+            <div class="card-header-left">
+              <span class="card-auth-badge">Professional Series · Single-Shot</span>
+              <h3 class="card-title">TASER X1</h3>
+            </div>
+            <span class="card-range-badge">15-FT Range</span>
+          </div>
+          <div class="card-device-area" style="flex-direction: column; align-items: flex-start;">
+            <div class="card-device-tagline">
+              <strong>Security Personnel · Home Defense · Delivery Drivers</strong>
+              Reliable Less-Lethal Defense for Those Who Protect.
+            </div>
+          </div>
+          <div class="card-body">
+            <div class="in-stock-row"><div class="in-stock-dot"></div>In Stock Locally — Ferndale</div>
+            <p class="card-desc">
+              Professional-grade less-lethal defense built on the same technology trusted by professionals worldwide. Extended 15-foot range with LASER-assisted targeting for accuracy under pressure, and 5 seconds of full-body NMI to neutralize threats. Ideal for security personnel, delivery drivers, and civilians who want professional stopping power.
+            </p>
+            <ul class="card-specs">
+              <li>15-foot probe range — safe standoff in any environment</li>
+              <li>5-second NMI cycle — effective full-body lock-up</li>
+              <li>LASER-assisted targeting for high-pressure accuracy</li>
+              <li>Contact stun backup for close-range defense</li>
+              <li>High-visibility design for rapid emergency deployment</li>
+              <li>3.2"H × 7.3"L × 1.3"W · Assembled in Arizona</li>
+              <li>Includes 2 cartridges, Power Magazine &amp; rugged case</li>
+            </ul>
+          </div>
+          <div class="card-footer">
+            <div class="card-price-block">
+              <div class="card-price-label">In Stock Locally</div>
+              <div class="card-price">$999.99</div>
+            </div>
+            <a href="contact.html" class="card-cta">Buy In-Store Today</a>
+          </div>
+        </div>
+
+        <!-- TASER 7 CQ -->
+        <div class="product-card">
+          <div class="card-header">
+            <div class="card-header-left">
+              <span class="card-auth-badge">Professional Series · Double-Shot</span>
+              <h3 class="card-title">TASER 7 CQ</h3>
+            </div>
+            <span class="card-range-badge">12-FT Range</span>
+          </div>
+          <div class="card-photo-area">
+            <img src="taser/7cq-photo-4.jpg" alt="TASER 7 CQ energy weapon" loading="lazy" decoding="async">
+          </div>
+          <div class="card-body">
+            <div class="in-stock-row"><div class="in-stock-dot"></div>In Stock Locally — Ferndale</div>
+            <p class="card-desc">
+              Close-range defense with professional performance. The TASER 7 CQ energy weapon delivers 5 seconds of full-body NMI and a double-shot capability — fire a backup round instantly without reloading. A loud arc warning deters threats before deployment. Built for home defense and professional security.
+            </p>
+            <ul class="card-specs">
+              <li>12-foot probe range — optimized for tight spaces</li>
+              <li>5-second NMI cycle — full-body lock-up</li>
+              <li>Double-shot: backup round without manual reload</li>
+              <li>Loud arc warning deters threats before deployment</li>
+              <li>High-visibility design for quick emergency access</li>
+              <li>3.25"H × 7.45"L × 1.65"W · 0.6 lb · Assembled in Arizona</li>
+              <li>Includes 2 cartridges, battery pack &amp; rugged case</li>
+            </ul>
+          </div>
+          <div class="card-footer">
+            <div class="card-price-block">
+              <div class="card-price-label">In Stock Locally</div>
+              <div class="card-price">$1,699.99</div>
+            </div>
+            <a href="contact.html" class="card-cta">Buy In-Store Today</a>
+          </div>
+        </div>
+
+      </div><!-- /products-grid pro -->
+
+    </section>
+
+    <!-- ============================================================
+         PRODUCT COMPARISON TABLE
+         ============================================================ -->
+    <section class="taser-section dark-bg" id="compare" style="padding-top: 48px; padding-bottom: 64px;">
+      <span class="taser-section-label">All Models Side by Side</span>
+      <h2 class="taser-section-title">Compare TASER® Models</h2>
+      <p class="taser-section-sub">Not sure which device fits your lifestyle? Use this chart to narrow it down — then handle each one in person before you buy.</p>
+      <div class="compare-scroll">
+        <table class="compare-table" role="table" aria-label="TASER model comparison">
+          <thead>
+            <tr>
+              <th class="compare-feature-col" scope="col"></th>
+              <th scope="col">StrikeLight® 2<span class="compare-price">$169.99</span></th>
+              <th scope="col">Pulse® 2<span class="compare-price">$399.99</span></th>
+              <th scope="col">Bolt® 2<span class="compare-price">$449.99</span></th>
+              <th scope="col">X1<span class="compare-price">$999.99</span></th>
+              <th scope="col">7 CQ<span class="compare-price">$1,699.99</span></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="compare-feature-col">Effective Range</td>
+              <td>Contact</td>
+              <td>15 ft</td>
+              <td>15 ft</td>
+              <td>15 ft</td>
+              <td>12 ft</td>
+            </tr>
+            <tr>
+              <td class="compare-feature-col">NMI Duration</td>
+              <td><span class="c-no">—</span></td>
+              <td>30 sec</td>
+              <td>30 sec</td>
+              <td>5 sec</td>
+              <td>5 sec</td>
+            </tr>
+            <tr>
+              <td class="compare-feature-col">LASER Targeting</td>
+              <td><span class="c-no">—</span></td>
+              <td><span class="c-yes">✓</span></td>
+              <td><span class="c-yes">✓</span></td>
+              <td><span class="c-yes">✓</span></td>
+              <td><span class="c-no">—</span></td>
+            </tr>
+            <tr>
+              <td class="compare-feature-col">LED Flashlight</td>
+              <td><span class="c-yes">✓</span> 700 lm</td>
+              <td><span class="c-yes">✓</span></td>
+              <td><span class="c-yes">✓</span> 210 lm</td>
+              <td><span class="c-yes">✓</span></td>
+              <td><span class="c-no">—</span></td>
+            </tr>
+            <tr>
+              <td class="compare-feature-col">Contact Stun</td>
+              <td><span class="c-yes">✓</span></td>
+              <td><span class="c-yes">✓</span></td>
+              <td><span class="c-yes">✓</span></td>
+              <td><span class="c-yes">✓</span></td>
+              <td><span class="c-yes">✓</span></td>
+            </tr>
+            <tr>
+              <td class="compare-feature-col">Safe Escape Guarantee</td>
+              <td><span class="c-yes">✓</span></td>
+              <td><span class="c-yes">✓</span></td>
+              <td><span class="c-yes">✓</span></td>
+              <td><span class="c-no">—</span></td>
+              <td><span class="c-no">—</span></td>
+            </tr>
+            <tr>
+              <td class="compare-feature-col">Double-Shot</td>
+              <td><span class="c-no">—</span></td>
+              <td><span class="c-no">—</span></td>
+              <td><span class="c-no">—</span></td>
+              <td><span class="c-no">—</span></td>
+              <td><span class="c-yes">✓</span></td>
+            </tr>
+            <tr class="compare-best-for">
+              <td class="compare-feature-col">Best For</td>
+              <td>Dog walkers &amp; nightstand</td>
+              <td>Concealed carry</td>
+              <td>Everyday carry</td>
+              <td>Security professionals</td>
+              <td>Home defense</td>
+            </tr>
+          </tbody>
+        </table>
       </div>
+      <p class="compare-note">Not sure which is right for you? <a href="contact.html">Ask our team in-store</a> — we'll help you choose in 15 minutes.</p>
     </section>
 
     <!-- ============================================================
@@ -1100,7 +1445,7 @@
           </button>
           <div class="faq-answer">
             <div class="faq-answer-inner">
-              It depends on how and where you carry. The TASER Pulse® 2 energy weapon is ideal for concealed carry and daily commuters who want a familiar firearm profile. The TASER Bolt® 2 energy weapon is designed for home defense and discreet carry — same 15-foot range, but in a form factor that raises no social red flags. The TASER StrikeLight® 2 device is the everyday carry solution — a 700-lumen flashlight with a contact stun built in. Stop in and our team will help you decide in person.
+              It depends on how you carry and where you need protection. The TASER Pulse® 2 energy weapon offers a traditional firearm profile — ideal for concealed carry and daily commuters. The TASER Bolt® 2 energy weapon is built for everyday carry and home defense in a sleek, compact form with a 210-lumen LED and laser targeting. The TASER StrikeLight® 2 stun device is for those who want contact-range protection built into a high-performance flashlight — the most powerful stun device legally available, at 10 µC (40% more than the industry standard). Stop in and our team will help you choose the right device for your lifestyle.
             </div>
           </div>
         </div>
@@ -1136,14 +1481,17 @@
          CTA BAND
          ============================================================ -->
     <section class="taser-cta-band">
-      <h2>Ready to Get Protected Today?</h2>
-      <p>Stop into our Ferndale location or give us a call. Handle every device in person, get Michigan compliance guidance, and leave protected — no shipping wait, no online guesswork.</p>
+      <h2>All 5 Models In Stock — Come Handle Them Today.</h2>
+      <p>Walk in, hold every device, get Michigan compliance guidance from a licensed professional, and leave protected the same day. No shipping wait. No online guesswork. Open Mon–Sat 9AM–6PM.</p>
       <div class="cta-buttons">
         <a href="tel:2487984366" class="btn-axon-yellow">Call (248) 798-4366</a>
         <a href="contact.html" class="btn-axon-outline">Send a Message →</a>
       </div>
       <p style="margin: 32px auto 0; font-family: 'Inter', sans-serif; font-size: 0.78rem; color: #2a3550; position: relative;">
         📍 2877 Hilton Rd, Ferndale, MI 48220 &nbsp;|&nbsp; Mon–Sat 9AM–6PM
+      </p>
+      <p style="margin: 20px auto 0; font-family: 'Inter', sans-serif; font-size: 0.78rem; color: #2a3550; position: relative;">
+        Also need a <a href="residential.html" style="color: #FFCC00; text-decoration: underline;">residential lock upgrade</a> or <a href="commercial.html" style="color: #FFCC00; text-decoration: underline;">commercial security</a>? We handle the full picture.
       </p>
     </section>
 
