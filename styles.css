@@ -862,6 +862,17 @@ footer strong {
     border: 0;
 }
 
+/* TASER nav link — highlighted in Axon yellow */
+.nav-taser {
+    color: #FFCC00 !important;
+    font-weight: 700 !important;
+}
+.nav-taser:hover {
+    color: #fff !important;
+    background: #FFCC00 !important;
+    border-radius: 4px;
+}
+
 @media (max-width: 768px) {
     header { padding: 10px 5%; }
     .logo { font-size: 1.8rem; }
