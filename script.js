@@ -22,8 +22,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 const mainTrigger = dropdownElement.querySelector('a');
                 // If they clicked the main dropdown category header link (or its child elements)
                 if(e.target === mainTrigger || (mainTrigger && mainTrigger.contains(e.target))) {
-                    const menuBtn = document.getElementById('mobile-menu-btn');
-                    if (menuBtn && window.getComputedStyle(menuBtn).display !== 'none') {
+                    if (window.matchMedia('(max-width: 768px)').matches) {
                         e.preventDefault();
                     }
                     dropdownElement.classList.toggle('open');
@@ -59,6 +58,7 @@ document.addEventListener("DOMContentLoaded", () => {
     
     const lightboxImg = document.createElement('img');
     lightboxImg.className = 'lightbox-img';
+    lightboxImg.alt = 'Enlarged gallery view';
     
     const lightboxClose = document.createElement('div');
     lightboxClose.className = 'lightbox-close';

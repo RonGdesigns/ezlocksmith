@@ -1,5 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=JetBrains+Mono:wght@400;700&display=swap');
-
 /* CSS VARIABLES */
 :root { 
     --display-font: 'Bodoni Moda', serif;
@@ -132,13 +130,13 @@ header {
 }
 
 .hero-btn {
-    background: #27ae60; 
+    background: #196f3d; /* High-contrast forest green */
     padding: 20px 40px; 
     font-size: 1.2rem;
     font-family: var(--mono-font);
     text-transform: uppercase;
 }
-.hero-btn:hover { background: #219653; }
+.hero-btn:hover { background: #145a32; }
 
 .mobile-btn {
     box-sizing: border-box;
@@ -372,7 +370,19 @@ header {
 .stars { color: #f1c40f; letter-spacing: 2px; margin-bottom: 15px; font-size: 1.2rem; }
 .review-text { font-style: italic; color: var(--text-main); margin-bottom: 20px; }
 .review-author { font-family: var(--mono-font); font-weight: bold; color: #fff; text-transform: uppercase; font-size: 0.9rem; }
-.review-location { color: var(--primary); font-size: 0.8rem; margin-left: 10px; }
+.review-location { color: #ff6b6b; font-size: 0.8rem; margin-left: 10px; font-weight: bold; }
+
+.police-badge {
+    background: var(--primary);
+    color: #ffffff;
+    padding: 2px 8px;
+    border-radius: 4px;
+    font-family: var(--mono-font);
+    font-size: 0.9rem;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+    display: inline-block;
+}
 
 .service-area-cluster {
     padding: 60px 5%;
@@ -491,6 +501,16 @@ footer {
 }
 footer p {
     margin: 8px 0;
+}
+footer p a {
+    color: #ffffff;
+    text-decoration: none;
+    border-bottom: 1px dashed var(--primary);
+    transition: all 0.3s;
+}
+footer p a:hover {
+    color: var(--primary-hover);
+    border-bottom-style: solid;
 }
 footer strong {
     font-family: var(--mono-font);

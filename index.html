@@ -69,6 +69,10 @@
     </script>
     
     <link rel="stylesheet" href="styles.css" />
+    <link rel="preload" as="image" href="coleman_municipal.webp" fetchpriority="high" />
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
   </head>
   <body>
     <div class="trust-bar">
@@ -116,7 +120,8 @@
       </nav>
     </header>
 
-    <section class="hero" style="background: linear-gradient(to bottom, rgba(10,10,10,0.8), rgba(10,10,10,0.95)), url('https://upload.wikimedia.org/wikipedia/commons/5/5c/Coleman_A._Young_Municipal_Center_in_snow%2C_from_across_Jefferson_%282%29.jpg') center/cover;">
+    
+    <main id="main-content"><section class="hero" style="background: linear-gradient(to bottom, rgba(10,10,10,0.8), rgba(10,10,10,0.95)), url('coleman_municipal.webp') center/cover;">
       <p style="font-family: var(--mono-font); color: var(--primary); text-transform: uppercase; letter-spacing: 2px; font-size: 1rem; margin-bottom: 15px;">Securing your future one lock at a time</p>
       <h1>Metro Detroit's Trusted<br /><span style="color: var(--primary);">Mobile Locksmith</span></h1>
       <p style="font-size: 1.2rem; color: #ccc; max-width: 600px; margin: 0 auto 30px;">Locked out? Lost your keys? We're here to help 24/7. Fast response times, upfront pricing, and professional service.</p>
@@ -127,7 +132,7 @@
     <!-- NEW: STOREFRONT & CAPABILITIES -->
     <section style="padding: 60px 5%; background: var(--bg-gray); text-align: center;">
       <h2 class="section-title">Visit Our Storefront</h2>
-      <img src="storefront.png" alt="EZ Locksmith Storefront" style="max-width: 100%; max-height: 500px; object-fit: cover; border-radius: 8px; box-shadow: 0 10px 30px rgba(0,0,0,0.5); margin-bottom: 30px;">
+      <img src="storefront.webp" width="800" height="600" alt="EZ Locksmith Storefront" style="max-width: 100%; max-height: 500px; object-fit: cover; border-radius: 8px; box-shadow: 0 10px 30px rgba(0,0,0,0.5); margin-bottom: 30px;">
       
       <div style="background: var(--bg-light); border: 1px solid var(--primary); border-left: 5px solid var(--primary); border-radius: 4px; padding: 30px; margin-top: 20px;">
         <h3 style="color: var(--primary); font-family: var(--mono-font); font-size: 1.5rem; margin-top: 0;">We Do It All: Motorcycles to 2026 Vehicles</h3>
@@ -137,12 +142,11 @@
 
     <!-- NEW TRUST BADGES GRID -->
     <div class="trust-badges-container">
-      <img src="bbb.webp" alt="BBB Accredited" class="trust-badge" style="height: 50px; width: auto; object-fit: contain;">
-      <img src="yelp.webp" alt="Yelp Reviews" class="trust-badge" style="height: 50px; width: auto; object-fit: contain;">
-      <img src="google.webp" alt="Google Reviews" class="trust-badge" style="height: 50px; width: auto; object-fit: contain;">
-      <img src="aloa.webp" alt="ALOA Security Professionals Association" class="trust-badge" style="height: 50px; width: auto; object-fit: contain;">
-      <img src="NASTF_logo.webp" alt="National Automotive Service Task Force" class="trust-badge" style="height: 50px; width: auto; object-fit: contain;">
-      <img src="safe_logo.png" alt="SAFE Technicians" class="trust-badge" style="height: 50px; width: auto; object-fit: contain; filter: invert(1);">
+      <img src="yelp.webp" width="99" height="40" alt="Yelp Reviews" class="trust-badge" style="height: 50px; width: auto; object-fit: contain;">
+      <img src="google.webp" width="81" height="40" alt="Google Reviews" class="trust-badge" style="height: 50px; width: auto; object-fit: contain;">
+      <img src="aloa.webp" width="32" height="40" alt="ALOA Security Professionals Association" class="trust-badge" style="height: 50px; width: auto; object-fit: contain;">
+      <img src="NASTF_logo.webp" width="95" height="40" alt="National Automotive Service Task Force" class="trust-badge" style="height: 50px; width: auto; object-fit: contain;">
+      <img src="safe_logo.webp" width="40" height="40" alt="SAFE Technicians" class="trust-badge" style="height: 50px; width: auto; object-fit: contain; filter: invert(1);">
     </div>
     <!-- SCAM ALERT CALLOUT -->
     <section style="padding: 40px 5%; background: var(--secondary);">
@@ -168,21 +172,21 @@
         <div class="checklist-item">
           <div class="checklist-icon">⚡</div>
           <div class="checklist-text">
-            <h4>Fast 20-Minute Response</h4>
+            <h3>Fast 20-Minute Response</h3>
             <p>We arrive quickly when you need us most.</p>
           </div>
         </div>
         <div class="checklist-item">
           <div class="checklist-icon">💰</div>
           <div class="checklist-text">
-            <h4>Upfront, Honest Pricing</h4>
+            <h3>Upfront, Honest Pricing</h3>
             <p>No hidden fees or surprise charges.</p>
           </div>
         </div>
         <div class="checklist-item">
           <div class="checklist-icon">🛡️</div>
           <div class="checklist-text">
-            <h4>Licensed, Bonded & Insured</h4>
+            <h3>Licensed, Bonded & Insured</h3>
             <p>Your property is fully protected.</p>
           </div>
         </div>
@@ -193,7 +197,7 @@
     <section style="padding: 60px 5%; background: var(--bg-gray); text-align: center; border-bottom: 1px solid var(--border);">
       <div style="border: 1px solid var(--border); border-left: 4px solid var(--primary); border-radius: 2px 16px 2px 8px; padding: 40px; box-shadow: 0 10px 30px rgba(0,0,0,0.5); max-width: 900px; margin: 0 auto;">
         <h2 style="color: #fff; font-family: var(--display-font); font-size: clamp(2rem, 4vw, 3rem); margin-top: 0; margin-bottom: 15px;">Trusted by Local Law Enforcement</h2>
-        <p style="color: var(--text-muted); font-size: 1.2rem; margin: 0; font-family: var(--mono-font); text-transform: uppercase; letter-spacing: 1px;">We are the go-to locksmith for lockouts and emergency services for the <span style="color: var(--primary);">Royal Oak</span>, <span style="color: var(--primary);">Ferndale</span>, and <span style="color: var(--primary);">Hazel Park</span> Police Stations.</p>
+        <p style="color: var(--text-muted); font-size: 1.2rem; margin: 0; font-family: var(--mono-font); text-transform: uppercase; letter-spacing: 1px;">We are the go-to locksmith for lockouts and emergency services for the <span class="police-badge">Royal Oak</span>, <span class="police-badge">Ferndale</span>, and <span class="police-badge">Hazel Park</span> Police Stations.</p>
       </div>
     </section>
 
@@ -226,7 +230,7 @@
         <a href="tel:2487984366" style="text-decoration: none; color: inherit;">
           <div class="service-item base-service emergency-highlight">
             <svg class="service-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
-            <h4 style="margin: 10px 0;">24/7 Emergency Lockout</h4>
+            <h3 style="margin: 10px 0;">24/7 Emergency Lockout</h3>
             <p>Fast, round-the-clock lockout service for cars, homes, and motorcycles across Metro Detroit.</p>
           </div>
         </a>
@@ -380,6 +384,8 @@
       <p style="color: var(--text-muted); font-size: 1.2rem; max-width: 600px; margin: 0 auto 30px;">Thinking of rekeying an entire office building or upgrading your commercial security? We handle large-scale jobs.</p>
       <a href="contact.html" class="btn-call hero-btn">CONTACT US FOR A QUOTE</a>
     </section>
+    </main>
+    
     <footer id="about">
       <p><strong>EZ Locksmith, LLC</strong></p>
       <p>2877 Hilton Rd, Ferndale, MI 48220</p>
@@ -392,7 +398,7 @@
       <div class="footer-credits">
         <span>Website by</span>
         <a href="https://irondigitalmi.com" target="_blank" rel="noopener">
-          <img src="iron-digital-logo (3).webp" alt="Iron Digital MI Logo">
+          <img src="iron-digital-logo (3).webp" width="16" height="16" alt="Iron Digital MI Logo">
           <span>Iron Digital MI</span>
         </a>
       </div>
